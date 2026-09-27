@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Media production project card</title>
+  <desc id="desc">A camera-inspired project image.</desc>
+  <rect width="1200" height="760" fill="#eceff4"/>
+  <rect x="230" y="245" width="740" height="360" rx="44" fill="#ffffff"/>
+  <rect x="330" y="180" width="230" height="95" rx="28" fill="#ffffff"/>
+  <circle cx="600" cy="425" r="132" fill="#d8e7e4"/>
+  <circle cx="600" cy="425" r="78" fill="#25323b"/>
+  <circle cx="820" cy="325" r="30" fill="#6f5974"/>
+  <rect x="280" y="635" width="620" height="18" rx="9" fill="#25323b" opacity="0.18"/>
+</svg>

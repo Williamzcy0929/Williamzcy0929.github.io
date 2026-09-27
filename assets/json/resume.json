@@ -1,0 +1,190 @@
+{
+  "basics": {
+    "name": "Changyue (William) Zhao",
+    "label": "Master of Biostatistics Student",
+    "email": "changyue.zhao@duke.edu",
+    "url": "https://Williamzcy0929.github.io",
+    "summary": "Master of Biostatistics student at Duke University developing foundation-model and LLM-agent approaches to biomedical analysis, and deep learning methods for biomedical data analysis and multimodal integration.",
+    "location": {
+      "city": "Durham",
+      "region": "North Carolina",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Williamzcy0929",
+        "url": "https://github.com/Williamzcy0929"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "changyue-william-zhao",
+        "url": "https://www.linkedin.com/in/changyue-william-zhao/"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Duke University",
+      "area": "Biostatistics",
+      "studyType": "Master of Biostatistics",
+      "score": "GPA: 4.0/4.0",
+      "startDate": "2025-08",
+      "highlights": [
+        "Selected coursework: Statistical Methods for Learning and Discovery; Deep Learning for Health Data; High-Dimensional Statistics and Machine Learning; Real Analysis; Statistical Inference (Ph.D. Level)."
+      ]
+    },
+    {
+      "institution": "University of Minnesota, Twin Cities",
+      "area": "Statistical Science",
+      "studyType": "Bachelor of Science; Minor in Computer Science",
+      "score": "GPA: 4.0/4.0",
+      "startDate": "2023-09",
+      "highlights": [
+        "Selected coursework: Mathematical Analysis; Theory of Statistics; Regression and Correlated Data; Statistical Machine Learning; Applied Multivariate Methods; Algorithms and Data Structures; Graduate Data Mining.",
+        "Graduated with High Distinction and received the Buehler Memorial Undergraduate Award as one of eight nominees.",
+        "CLA Dean’s List, Fall 2023 to Spring 2025."
+      ],
+      "endDate": "2025-05"
+    },
+    {
+      "institution": "Shandong University of Finance and Economics",
+      "area": "Finance",
+      "studyType": "Bachelor of Economics",
+      "score": "GPA: 92.86/100; WES GPA: 3.89/4.0",
+      "startDate": "2021-09",
+      "highlights": [
+        "Selected coursework: Advanced Mathematics; Linear Algebra; Probability Theory and Statistics; Applied Statistics; Python; Microeconomics; Finance.",
+        "SDUFE First-Prize Scholarship in 2022 and 2023."
+      ],
+      "endDate": "2025-06"
+    }
+  ],
+  "projects": [
+    {
+      "name": "L-STAR",
+      "description": "I developed a workflow that uses visual LLM comparisons to select spatial domain detection methods and combine their clusterings into a consensus tissue partition.",
+      "startDate": "2025-09",
+      "highlights": [
+        "Built structured prompts, repeated comparisons of spatial maps and optional histology, JSON logs, and win-rate-based method selection.",
+        "Implemented consensus clustering with co-assignment matrices and average linkage, plus an all-wise comparison mode that aggregates repeated rankings with one LLM call per repeat.",
+        "Designed experiments across six spatial transcriptomics datasets to separate the effects of method selection and clustering aggregation, including ensemble-size, alternative-LLM, and fixed-method baselines.",
+        "Built marker-gene-based annotation with spot- and cell-level labels and an Unknown option; evaluated agreement with manual annotations using BioLORD-2023 embeddings and within-dataset permutation tests.",
+        "Audited sensitivity to color palettes, presentation order, and redundant candidates through ranking agreement, selected-method overlap, and clustering stability."
+      ],
+      "url": "https://github.com/Williamzcy0929/L-STAR"
+    },
+    {
+      "name": "LLM-Guided Pseudotime Analysis",
+      "description": "I developed pseudotime-agent, an end-to-end Python package that coordinates R/Seurat analysis and LLM inference through LangGraph, from evidence generation to per-cell pseudotime estimation.",
+      "startDate": "2026-01",
+      "highlights": [
+        "Designed parallel UMAP and t-SNE annotation branches, concurrent lineage-family adjudication, and cross-embedding trajectory fusion, using marker-gene and graph evidence to review uncertain relationships.",
+        "Extended the agent with spatial trajectory proposal, relation adjudication, ordering review, and comparison with nonspatial trajectories by combining tissue adjacency and molecular evidence.",
+        "Implemented expression-weighted shortest-path pseudotime for spatially separate instances of a shared process, with synthetic negative controls and perturbation tests for spatial dependence and ordering stability.",
+        "Added JSON schema validation, corrective LLM retries, resumable execution, provenance logging, expert-supplied annotations, and preprocessed Seurat inputs including scATAC-seq gene-activity data.",
+        "Designed and implemented bPOS, an exact branch-aware metric that jointly evaluates lineage membership and within-lineage ordering using scalable block processing and inclusion-exclusion counting.",
+        "Diagnosed a bug in dyneval-based F1branches evaluation; reimplemented its published Jaccard, recovery, relevance, and harmonic-mean definition over the full cell scope and added diagnostic comparisons.",
+        "Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN and curated gold-standard, silver-standard, and synthetic trajectory benchmarks."
+      ]
+    },
+    {
+      "name": "Med2State",
+      "description": "I am developing Med2State, a framework for learning structured patient-state representations from available multimodal clinical evidence and longitudinal history.",
+      "startDate": "2025-11",
+      "highlights": [
+        "Designing configurable encoders and evidence fusion for demographics, vital signs, structured EHR events, text, and images, with explicit handling of available input sources.",
+        "Organizing each state representation into DX, PROC, and TREAT semantic channels for disease-related information, procedures, and treatment or medication exposure, using evidence available up to a defined time point.",
+        "Investigating learning from partial evidence and longitudinal context, with concept readouts and retrieval-based evaluation to test what information each channel retains.",
+        "The earlier prototype aligned BioClinicalBERT note embeddings with structured EHR events, fused them through multi-head cross-attention, and implemented a Med2Vec-compatible PyTorch model with component ablations."
+      ],
+      "url": "https://github.com/Williamzcy0929/Med2Vec_Plus"
+    },
+    {
+      "name": "PaperEval",
+      "description": "I built data pipelines and LLM-based workflows for acceptance prediction, manuscript assessment, and review-response evaluation.",
+      "startDate": "2025-03",
+      "highlights": [
+        "Built Selenium and asynchronous OpenReview pipelines with JSON storage and resumable checkpoints for papers, reviews, scores, author responses, and metadata; extracted author contact information from PDFs with PyMuPDF.",
+        "Fine-tuned GPT-4o for acceptance prediction with progressively richer inputs: paper metadata, reviewer scores, and review comments. Implemented training-data preparation and classification evaluation.",
+        "Developed agent workflows for manuscript and figure assessment, review-response scoring, and response generation; evaluated generated responses against replies from accepted and rejected submissions.",
+        "Designed a bounded Gaussian-noise mapping from acceptance levels to continuous constructiveness targets."
+      ],
+      "url": "https://github.com/Williamzcy0929/PaperEval"
+    },
+    {
+      "name": "Overlapping Group LASSO",
+      "description": "I compared overlapping group LASSO implementations and implemented an optimized algorithm in C for integration with R.",
+      "startDate": "2024-09",
+      "highlights": [
+        "Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in VennLasso under matched problem sizes and convergence tolerances.",
+        "Simulated 1,000 large sparse-matrix datasets with overlapping groups and compared runtime using t-tests."
+      ]
+    },
+    {
+      "name": "Data-Intensive Research",
+      "description": "I implemented research data-collection infrastructure and synthesized literature on the effects of generative AI.",
+      "startDate": "2024-07",
+      "highlights": [
+        "Built a LinkedIn crawler for 7,063 profiles using DrissionPage, depth-first search, multithreading, persistent SQLite storage, and resumable checkpoints.",
+        "Implemented error logging and automated gap recovery for a Google Patents collection pipeline handling approximately 300 GB of Chinese patent text.",
+        "Screened 50 papers and organized 13 core studies into a focused literature review."
+      ]
+    },
+    {
+      "name": "MUDAC 2025",
+      "description": "I developed features and models for sparse, high-dimensional numerical and text data in the Midwest Undergraduate Data Analysis Competition.",
+      "startDate": "2025-03",
+      "highlights": [
+        "Encoded data using embeddings, sentiment scores, and pairwise similarities.",
+        "Applied Cox proportional hazards regression and a causal Bayesian network to study match duration and closure.",
+        "Designed a mixture-of-experts model with regression, MLP, and Transformer experts and a learned gating network; compared with random forest and XGBoost."
+      ]
+    },
+    {
+      "name": "Public Health Equity Data Challenge",
+      "description": "I analyzed questionnaire data on inequities in access to mental-health resources and co-authored the analysis report and poster.",
+      "startDate": "2024-10",
+      "highlights": [
+        "Applied multiple regression, ridge regression, decision trees, and causal inference methods.",
+        "Built a mental-health prediction interface in tkinter backed by an AdaBoost model in scikit-learn."
+      ]
+    },
+    {
+      "name": "Financial Forecasting Thesis",
+      "description": "My undergraduate thesis compared statistical and neural forecasting models for stock-market and cryptocurrency time series.",
+      "startDate": "2024-03",
+      "highlights": [
+        "Collected and harmonized data from Wind and Yahoo Finance; implemented ARIMA in R and LSTM and Transformer models in PyTorch.",
+        "Adapted Transformer input embeddings and feature weighting and compared models across the Shanghai Composite, Nasdaq, and CMC200 indices."
+      ]
+    },
+    {
+      "name": "Carbon Emission Rights Pricing",
+      "description": "I studied carbon-emission trading prices using macroeconomic, fossil-fuel price, and policy variables constructed from Wind data.",
+      "startDate": "2023-03",
+      "highlights": [
+        "Diagnosed underfitting in R regression models and examined associations between carbon prices and policy variables.",
+        "Implemented vector autoregression and impulse-response analysis in R and LSTM forecasting in TensorFlow."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["Python", "R", "C/C++", "Java", "OCaml", "Swift", "MATLAB", "SQL"]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"]
+    },
+    {
+      "name": "Scientific Computing",
+      "keywords": ["Scanpy", "Seurat", "NumPy", "pandas"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["Git", "SQLite", "Selenium", "LaTeX", "Markdown", "SPSS"]
+    }
+  ]
+}

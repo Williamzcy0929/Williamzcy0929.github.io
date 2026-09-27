@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Data analysis project card</title>
+  <desc id="desc">A clean chart-inspired project image.</desc>
+  <rect width="1200" height="760" fill="#eef4f2"/>
+  <rect x="120" y="120" width="960" height="520" rx="24" fill="#ffffff"/>
+  <path d="M220 520 L380 390 L540 440 L700 260 L900 330 L980 230" fill="none" stroke="#2f6f73" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#25323b" opacity="0.22">
+    <rect x="220" y="560" width="720" height="18" rx="9"/>
+    <rect x="220" y="190" width="250" height="18" rx="9"/>
+    <rect x="220" y="235" width="180" height="18" rx="9"/>
+  </g>
+</svg>
+

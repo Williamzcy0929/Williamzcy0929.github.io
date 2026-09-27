@@ -1,0 +1,111 @@
+[
+  {
+    "title": "L-STAR",
+    "description": "Visual LLM-guided consensus spatial domain detection.",
+    "category": "Biomedical AI",
+    "importance": 1,
+    "featured": true,
+    "period": "September 2025 – present",
+    "status": "Accepted in principle at Nature Communications",
+    "slug": "l-star"
+  },
+  {
+    "title": "LLM-Guided Pseudotime Analysis",
+    "description": "Evidence-guided agents for cell-state trajectories and spatial pseudotime.",
+    "category": "Biomedical AI",
+    "importance": 2,
+    "featured": true,
+    "period": "January 2026 – present",
+    "status": "Manuscript in preparation",
+    "slug": "pseudotime-agent"
+  },
+  {
+    "title": "Med2State",
+    "description": "Structured patient-state representations from incomplete multimodal health records.",
+    "category": "Biomedical AI",
+    "importance": 3,
+    "featured": true,
+    "period": "November 2025 – present",
+    "status": "Ongoing methodological research",
+    "slug": "med2state"
+  },
+  {
+    "title": "PaperEval",
+    "deliverable_url": "https://github.com/Williamzcy0929/PaperEval",
+    "description": "Reproducible data collection and LLM workflows for peer-review analysis.",
+    "category": "Methods & Research Infrastructure",
+    "importance": 4,
+    "featured": false,
+    "period": "March – September 2025",
+    "slug": "papereval"
+  },
+  {
+    "title": "Overlapping Group LASSO",
+    "description": "Matched algorithm benchmarks and a C implementation for R.",
+    "category": "Methods & Research Infrastructure",
+    "importance": 5,
+    "featured": false,
+    "period": "September 2024 – May 2025",
+    "slug": "overlapping-group-lasso"
+  },
+  {
+    "title": "Data-Intensive Research",
+    "description": "Resumable collection pipelines and a focused review of generative AI.",
+    "category": "Methods & Research Infrastructure",
+    "importance": 6,
+    "featured": false,
+    "period": "July 2024 – June 2025",
+    "slug": "tsinghua-generative-ai"
+  },
+  {
+    "title": "MUDAC 2025",
+    "description": "Feature-specific experts, survival analysis, and sparse multimodal data.",
+    "category": "Applied Data Science",
+    "importance": 7,
+    "featured": false,
+    "period": "March – April 2025",
+    "status": "7th place in Innovation & Creativity",
+    "slug": "mudac-2025"
+  },
+  {
+    "title": "Public Health Equity Data Challenge",
+    "description": "Mental-health resource access in Hennepin County.",
+    "category": "Applied Data Science",
+    "importance": 8,
+    "featured": false,
+    "period": "October – November 2024",
+    "status": "Top 25% of the undergraduate division",
+    "slug": "hennepin-health-equity"
+  },
+  {
+    "title": "Financial Forecasting Thesis",
+    "show_in_research": false,
+    "description": "Comparing ARIMA, LSTM, and Transformer models across financial markets.",
+    "category": "Applied Data Science",
+    "importance": 9,
+    "featured": false,
+    "period": "March 2024 – May 2025",
+    "status": "Outstanding Graduation Thesis Award",
+    "slug": "financial-forecasting-thesis"
+  },
+  {
+    "title": "Carbon Emission Rights Pricing",
+    "show_in_research": false,
+    "description": "Regression and time-series analysis of China’s carbon market.",
+    "category": "Applied Data Science",
+    "importance": 10,
+    "featured": false,
+    "period": "March – June 2023",
+    "slug": "carbon-emission-pricing"
+  },
+  {
+    "title": "Huatai Insurance Customer Modeling",
+    "show_in_research": false,
+    "description": "Customer-value modeling and segmentation of one million records.",
+    "category": "Applied Data Science",
+    "importance": 11,
+    "featured": false,
+    "period": "June – August 2024",
+    "slug": "huatai-insurance-internship"
+  }
+]
