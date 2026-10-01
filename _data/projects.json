@@ -1,6 +1,7 @@
 [
   {
     "title": "L-STAR",
+    "deliverable_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.747158v1.abstract",
     "description": "Visual LLM-guided consensus spatial domain detection.",
     "category": "Biomedical AI",
     "importance": 1,

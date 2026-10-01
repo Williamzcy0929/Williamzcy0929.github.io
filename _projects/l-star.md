@@ -29,7 +29,7 @@ I developed a workflow that uses visual LLM comparisons to select spatial domain
 
 **Supervisor:** Prof. Zhicheng Ji, Duke University.
 
-[View code on GitHub](https://github.com/Williamzcy0929/L-STAR)
+[Read the preprint on bioRxiv](https://www.biorxiv.org/content/10.64898/2026.08.25.747158v1.abstract) · [View code on GitHub](https://github.com/Williamzcy0929/L-STAR)
 
 [← All research]({{ "/projects/" | relative_url }})
 
