@@ -1,12 +1,12 @@
 ---
-title: Public Health Equity Data Challenge
-description: Mental-health resource access in Hennepin County.
-category: Applied Data Science
-layout: page
-importance: 8
+title: "Public Health Equity Data Challenge"
+description: "Mental-health resource access in Hennepin County."
+category: "Applied Data Science"
+importance: 6
 featured: false
-period: October – November 2024
-status: Top 25% of the undergraduate division
+period: "October – November 2024"
+layout: "page"
+status: "Top 25% of the undergraduate division"
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
@@ -19,10 +19,11 @@ I analyzed questionnaire data on inequities in access to mental-health resources
 
 ## My Contributions
 
-- Applied multiple regression, ridge regression, decision trees, and causal inference methods.
+- Analyzed Hennepin County questionnaire data on inequities in access to mental-health resources using multiple regression, ridge regression, decision trees, and causal inference methods.
 - Built a mental-health prediction interface in tkinter backed by an AdaBoost model in scikit-learn.
+- Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division.
 
-**Supervisors:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.
+**Supervision:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.
 
 [← All research]({{ "/projects/" | relative_url }})
 

@@ -21,9 +21,10 @@ cv:
       end_date: present
       score: "GPA: 4.0/4.0"
       highlights:
-        - "Selected coursework: Statistical Methods for Learning and Discovery; Deep Learning
-          for Health Data; High-Dimensional Statistics and Machine Learning; Real Analysis;
-          Statistical Inference (Ph.D. Level)."
+        - "Selected Coursework: Statistical Methods for Learning and Discovery, Deep Learning
+          for Health Data, High-Dimensional Statistics and Machine Learning, Real Analysis,
+          Statistical Inference (Ph.D. Level)"
+        - "Ranked second in Real Analysis by course grade (Instructor: Michael C. Reed)"
     - institution: University of Minnesota, Twin Cities
       location: Minneapolis, MN
       area: Statistical Science
@@ -32,12 +33,12 @@ cv:
       end_date: 2025-05
       score: "GPA: 4.0/4.0"
       highlights:
-        - "Selected coursework: Mathematical Analysis; Theory of Statistics; Regression
-          and Correlated Data; Statistical Machine Learning; Applied Multivariate Methods;
-          Algorithms and Data Structures; Graduate Data Mining."
+        - "Selected Coursework: Mathematical Analysis, Theory of Statistics, Regression
+          and Correlated Data, Statistical Machine Learning, Applied Multivariate Methods,
+          Algorithms and Data Structures, Graduate Data Mining"
         - Graduated with High Distinction and received the Buehler Memorial Undergraduate
-          Award as one of eight nominees.
-        - CLA Dean’s List, Fall 2023 to Spring 2025.
+          Award as one of eight nominees. Named to the CLA Dean's List from Fall 2023
+          to Spring 2025
     - institution: Shandong University of Finance and Economics
       location: Jinan, China
       area: Finance
@@ -46,9 +47,9 @@ cv:
       end_date: 2025-06
       score: "GPA: 92.86/100; WES GPA: 3.89/4.0"
       highlights:
-        - "Selected coursework: Advanced Mathematics; Linear Algebra; Probability Theory
-          and Statistics; Applied Statistics; Python; Microeconomics; Finance."
-        - SDUFE First-Prize Scholarship in 2022 and 2023.
+        - "Selected Coursework: Advanced Mathematics, Linear Algebra, Probability Theory
+          and Statistics, Applied Statistics, Python, Microeconomics, Finance"
+        - Received the SDUFE First-Prize Scholarship in 2022 and 2023
   research:
     - slug: l-star
       title: L-STAR
@@ -57,7 +58,7 @@ cv:
       period: September 2025 – present
       start: 2025-09
       end: present
-      status: Accepted in principle at Nature Communications
+      status: First-author manuscript accepted in principle at Nature Communications
       supervisor: Prof. Zhicheng Ji, Duke University
       institution: Duke University
       url: https://github.com/Williamzcy0929/L-STAR
@@ -66,21 +67,26 @@ cv:
         domain detection methods and combine their clusterings into a consensus tissue
         partition.
       highlights:
-        - Built structured prompts, repeated comparisons of spatial maps and optional
-          histology, JSON logs, and win-rate-based method selection.
-        - Implemented consensus clustering with co-assignment matrices and average linkage,
-          plus an all-wise comparison mode that aggregates repeated rankings with one
-          LLM call per repeat.
-        - Designed experiments across six spatial transcriptomics datasets to separate
-          the effects of method selection and clustering aggregation, including ensemble-size,
-          alternative-LLM, and fixed-method baselines.
-        - Built marker-gene-based annotation with spot- and cell-level labels and an Unknown
-          option; evaluated agreement with manual annotations using BioLORD-2023 embeddings
-          and within-dataset permutation tests.
-        - Audited sensitivity to color palettes, presentation order, and redundant candidates
-          through ranking agreement, selected-method overlap, and clustering stability.
-    - slug: pseudotime-agent
-      title: LLM-Guided Pseudotime Analysis
+        - Developed the L-STAR visual LLM workflow for spatial domain detection, with
+          structured prompts, repeated comparisons of spatial maps and optional histology,
+          JSON logs, and win-rate-based method selection.
+        - Implemented consensus clustering with co-assignment matrices and average linkage.
+          Added an all-wise comparison mode that aggregates repeated rankings to select
+          ensemble members with one LLM call per repeat.
+        - Designed comparative experiments across six spatial transcriptomics datasets
+          to examine ensemble size, alternative LLMs, and fixed-method consensus baselines,
+          separating the roles of method selection and clustering aggregation.
+        - Built marker-gene-based domain annotation with spot- and cell-level labels and
+          an Unknown option. Evaluated agreement with manual annotations using BioLORD-2023
+          embeddings and within-dataset permutation tests.
+        - Audited sensitivity to color palettes, presentation order, and redundant candidate
+          methods by examining ranking agreement, selected-method overlap, and clustering
+          stability through repeated runs and controlled perturbations.
+      section: publications
+      citation: Changyue Zhao and Zhicheng Ji. Visual LLM-guided consensus spatial domain
+        detection with L-STAR.
+    - slug: trace
+      title: TRACE
       description: Evidence-guided agents for cell-state trajectories and spatial pseudotime.
       category: Biomedical AI
       period: January 2026 – present
@@ -88,30 +94,35 @@ cv:
       end: present
       status: Manuscript in preparation
       featured: true
-      summary: I developed pseudotime-agent, an end-to-end Python package that coordinates
-        R/Seurat analysis and LLM inference through LangGraph, from evidence generation
-        to per-cell pseudotime estimation.
+      summary: I developed TRACE, an end-to-end LangGraph workflow for single-cell and
+        spatial pseudotime analysis, implemented in the pseudotime-agent package.
       highlights:
-        - Designed parallel UMAP and t-SNE annotation branches, concurrent lineage-family
-          adjudication, and cross-embedding trajectory fusion, using marker-gene and graph
-          evidence to review uncertain relationships.
-        - Extended the agent with spatial trajectory proposal, relation adjudication,
-          ordering review, and comparison with nonspatial trajectories by combining tissue
-          adjacency and molecular evidence.
-        - Implemented expression-weighted shortest-path pseudotime for spatially separate
-          instances of a shared process, with synthetic negative controls and perturbation
-          tests for spatial dependence and ordering stability.
-        - Added JSON schema validation, corrective LLM retries, resumable execution, provenance
-          logging, expert-supplied annotations, and preprocessed Seurat inputs including
-          scATAC-seq gene-activity data.
-        - Designed and implemented bPOS, an exact branch-aware metric that jointly evaluates
-          lineage membership and within-lineage ordering using scalable block processing
-          and inclusion-exclusion counting.
-        - Diagnosed a bug in dyneval-based F1branches evaluation; reimplemented its published
-          Jaccard, recovery, relevance, and harmonic-mean definition over the full cell
-          scope and added diagnostic comparisons.
-        - Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN and curated
-          gold-standard, silver-standard, and synthetic trajectory benchmarks.
+        - Developed pseudotime-agent, an end-to-end LangGraph package coordinating Python,
+          R/Seurat, and LLM inference for single-cell and spatial pseudotime analysis.
+          Implemented schema validation, corrective retries, provenance tracking, and
+          fingerprint-validated replay with support for expert-supplied inputs.
+        - Designed parallel UMAP and t-SNE workflows for cell-type annotation, lineage-family
+          adjudication, and cross-embedding trajectory fusion, using assay-aware molecular
+          evidence for scRNA-seq and scATAC-seq inputs.
+        - Designed LLM-guided spatial process-instance resolution using molecular profiles
+          and tissue topology to distinguish repeated local processes within connected
+          tissue, with explicit cell membership, local seeds, and unresolved assignments.
+        - Implemented expression-weighted graph pseudotime with instance-level ordering
+          review and partial-trajectory support. Separated molecular lineage hypotheses,
+          physical feasibility, and spatial evidence in auditable execution rules.
+        - Built an optional completion module with evidence-based assignment review and
+          donor-restricted imputation. Preserved original inference outputs and unresolved
+          multi-instance assignments, keeping graph-derived and imputed values distinct.
+        - Designed and implemented bPOS, an exact branch-aware pseudotime metric that
+          jointly evaluates lineage membership and within-lineage ordering using scalable
+          block processing and inclusion-exclusion counting.
+        - Diagnosed a bug in the dyneval-based benchmark evaluation of F1branches. Reimplemented
+          the published Jaccard, recovery, relevance, and harmonic-mean definition over
+          the full cell scope and added diagnostic comparisons.
+        - Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN. Designed
+          synthetic negative controls, perturbation tests, and staged replay experiments
+          to assess spatial assumptions, instance partitioning, and pseudotime stability.
+      section: publications
     - slug: med2state
       title: Med2State
       description: Structured patient-state representations from incomplete multimodal
@@ -126,22 +137,23 @@ cv:
       url: https://github.com/Williamzcy0929/Med2Vec_Plus
       huggingface: https://huggingface.co/Williamzcy0929/Med2Vec_Plus
       featured: true
-      summary: I am developing Med2State, a framework for learning structured patient-state
-        representations from available multimodal clinical evidence and longitudinal
-        history.
+      summary: I am designing Med2State, a framework for learning structured patient-state
+        representations from incomplete multimodal health records, building on the implemented
+        Med2Vec+ prototype.
       highlights:
-        - Designing configurable encoders and evidence fusion for demographics, vital
-          signs, structured EHR events, text, and images, with explicit handling of available
-          input sources.
-        - Organizing each state representation into DX, PROC, and TREAT semantic channels
-          for disease-related information, procedures, and treatment or medication exposure,
-          using evidence available up to a defined time point.
-        - Investigating learning from partial evidence and longitudinal context, with
-          concept readouts and retrieval-based evaluation to test what information each
-          channel retains.
-        - The earlier prototype aligned BioClinicalBERT note embeddings with structured
-          EHR events, fused them through multi-head cross-attention, and implemented a
-          Med2Vec-compatible PyTorch model with component ablations.
+        - Designing Med2State, a framework for learning structured patient-state representations
+          from incomplete multimodal health records, with configurable evidence encoders
+          and disease, procedure, and treatment channels.
+        - Formulating partial-evidence learning with longitudinal context. Planning concept-readout,
+          similar-state retrieval, and trajectory evaluations to assess semantic content
+          and missing-input behavior before validating downstream use.
+        - Implemented Med2Vec+, the note-aware PyTorch prototype underlying this research
+          direction, with multi-aspect patient histories, demographic covariates, and
+          visit-aligned BioClinicalBERT note embeddings.
+        - Designed multi-head cross-attention to condition EHR embeddings on clinical
+          notes. Built Med2Vec-compatible input and output interfaces and component-ablation
+          workflows for the prototype.
+      section: research
     - slug: papereval
       title: PaperEval
       description: Reproducible data collection and LLM workflows for peer-review analysis.
@@ -155,51 +167,20 @@ cv:
       summary: I built data pipelines and LLM-based workflows for acceptance prediction,
         manuscript assessment, and review-response evaluation.
       highlights:
-        - Built Selenium and asynchronous OpenReview pipelines with JSON storage and resumable
-          checkpoints for papers, reviews, scores, author responses, and metadata; extracted
-          author contact information from PDFs with PyMuPDF.
-        - "Fine-tuned GPT-4o for acceptance prediction with progressively richer inputs:
+        - Built Selenium and asynchronous data-collection pipelines for major machine-learning
+          conferences on OpenReview, storing papers, reviews, scores, author responses,
+          and metadata in JSON with resumable checkpoints.
+        - Extracted author contact information from conference PDFs with PyMuPDF to enrich
+          OpenReview metadata.
+        - "Fine-tuned GPT-4o for acceptance prediction using progressively richer inputs:
           paper metadata, reviewer scores, and review comments. Implemented training-data
-          preparation and classification evaluation."
-        - Developed agent workflows for manuscript and figure assessment, review-response
-          scoring, and response generation; evaluated generated responses against replies
-          from accepted and rejected submissions.
-        - Designed a bounded Gaussian-noise mapping from acceptance levels to continuous
-          constructiveness targets.
-    - slug: overlapping-group-lasso
-      title: Overlapping Group LASSO
-      description: Matched algorithm benchmarks and a C implementation for R.
-      category: Methods & Research Infrastructure
-      period: September 2024 – May 2025
-      start: 2024-09
-      end: 2025-05
-      supervisor: Prof. Tianxi Li, University of Minnesota
-      institution: School of Statistics, University of Minnesota, Twin Cities
-      summary: I compared overlapping group LASSO implementations and implemented an
-        optimized algorithm in C for integration with R.
-      highlights:
-        - Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in VennLasso
-          under matched problem sizes and convergence tolerances.
-        - Simulated 1,000 large sparse-matrix datasets with overlapping groups and compared
-          runtime using t-tests.
-    - slug: tsinghua-generative-ai
-      title: Data-Intensive Research
-      description: Resumable collection pipelines and a focused review of generative
-        AI.
-      category: Methods & Research Infrastructure
-      period: July 2024 – June 2025
-      start: 2024-07
-      end: 2025-06
-      supervisor: Prof. Wu Zhu, Tsinghua University
-      institution: School of Economics and Management, Tsinghua University
-      summary: I implemented research data-collection infrastructure and synthesized
-        literature on the effects of generative AI.
-      highlights:
-        - Built a LinkedIn crawler for 7,063 profiles using DrissionPage, depth-first
-          search, multithreading, persistent SQLite storage, and resumable checkpoints.
-        - Implemented error logging and automated gap recovery for a Google Patents collection
-          pipeline handling approximately 300 GB of Chinese patent text.
-        - Screened 50 papers and organized 13 core studies into a focused literature review.
+          preparation and classification evaluation workflows."
+        - Developed LLM-based agent workflows for manuscript and figure assessment, review-response
+          scoring, and response generation. Evaluated generated responses against author
+          replies from accepted and rejected submissions.
+        - Designed a bounded Gaussian-noise mapping to convert acceptance levels into
+          continuous constructiveness targets.
+      section: research
     - slug: mudac-2025
       title: MUDAC 2025
       description: Feature-specific experts, survival analysis, and sparse multimodal
@@ -214,11 +195,15 @@ cv:
       summary: I developed features and models for sparse, high-dimensional numerical
         and text data in the Midwest Undergraduate Data Analysis Competition.
       highlights:
-        - Encoded data using embeddings, sentiment scores, and pairwise similarities.
+        - Encoded sparse, high-dimensional numerical and text data with embeddings, sentiment
+          scores, and pairwise similarities.
         - Applied Cox proportional hazards regression and a causal Bayesian network to
           study match duration and closure.
         - Designed a mixture-of-experts model with regression, MLP, and Transformer experts
-          and a learned gating network; compared with random forest and XGBoost.
+          for different feature types and a learned gating network. Compared it with random
+          forest and XGBoost baselines.
+        - Placed 7th in Innovation & Creativity.
+      section: research
     - slug: hennepin-health-equity
       title: Public Health Equity Data Challenge
       description: Mental-health resource access in Hennepin County.
@@ -232,43 +217,32 @@ cv:
       summary: I analyzed questionnaire data on inequities in access to mental-health
         resources and co-authored the analysis report and poster.
       highlights:
-        - Applied multiple regression, ridge regression, decision trees, and causal inference
-          methods.
+        - Analyzed Hennepin County questionnaire data on inequities in access to mental-health
+          resources using multiple regression, ridge regression, decision trees, and causal
+          inference methods.
         - Built a mental-health prediction interface in tkinter backed by an AdaBoost
           model in scikit-learn.
-    - slug: financial-forecasting-thesis
-      title: Financial Forecasting Thesis
-      description: Comparing ARIMA, LSTM, and Transformer models across financial markets.
-      category: Applied Data Science
-      period: March 2024 – May 2025
-      start: 2024-03
+        - Co-authored the analysis report and poster and placed in the top 25% of the
+          undergraduate division.
+      section: research
+    - slug: overlapping-group-lasso
+      title: Overlapping Group LASSO
+      description: Matched algorithm benchmarks and a C implementation for R.
+      category: Methods & Research Infrastructure
+      period: September 2024 – May 2025
+      start: 2024-09
       end: 2025-05
-      status: Outstanding Graduation Thesis Award
-      supervisor: Prof. Mengmeng Zheng, Shandong University of Finance and Economics
-      institution: Shandong University of Finance and Economics
-      summary: My undergraduate thesis compared statistical and neural forecasting models
-        for stock-market and cryptocurrency time series.
+      supervisor: Prof. Tianxi Li, University of Minnesota
+      institution: School of Statistics, University of Minnesota, Twin Cities
+      summary: I compared overlapping group LASSO implementations and implemented an
+        optimized algorithm in C for integration with R.
       highlights:
-        - Collected and harmonized data from Wind and Yahoo Finance; implemented ARIMA
-          in R and LSTM and Transformer models in PyTorch.
-        - Adapted Transformer input embeddings and feature weighting and compared models
-          across the Shanghai Composite, Nasdaq, and CMC200 indices.
-    - slug: carbon-emission-pricing
-      title: Carbon Emission Rights Pricing
-      description: Regression and time-series analysis of China’s carbon market.
-      category: Applied Data Science
-      period: March – June 2023
-      start: 2023-03
-      end: 2023-06
-      supervisor: Prof. Zumian Xiao, Shandong University of Finance and Economics
-      institution: School of Finance, Shandong University of Finance and Economics
-      summary: I studied carbon-emission trading prices using macroeconomic, fossil-fuel
-        price, and policy variables constructed from Wind data.
-      highlights:
-        - Diagnosed underfitting in R regression models and examined associations between
-          carbon prices and policy variables.
-        - Implemented vector autoregression and impulse-response analysis in R and LSTM
-          forecasting in TensorFlow.
+        - Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in the
+          R package VennLasso under matched problem sizes and convergence tolerances.
+        - Simulated 1,000 large sparse-matrix datasets with overlapping groups and compared
+          runtime using t-tests.
+        - Implemented the optimized algorithm in C for integration with R.
+      section: research
   teaching:
     - title: "Teaching Assistant: BIOSTAT 830"
       institution: Duke University
@@ -276,41 +250,31 @@ cv:
       highlights:
         - Hold weekly office hours and grade assignments in graduate statistical inference,
           asymptotic theory, and decision theory.
-        - Prepare and verify proof-based LaTeX solutions; format and proofread slides,
-          standardize notation, and convert formulas into editable PowerPoint equations.
-        - "Supervisor: Dr. Lin (Lynn) Lin."
+        - Prepare and verify proof-based LaTeX assignment solutions. Format and proofread
+          lecture slides, standardizing mathematical notation and converting formulas
+          into editable PowerPoint equations.
+      supervisor: Dr. Lin (Lynn) Lin
     - title: "Undergraduate Teaching Assistant: STAT 3011"
       institution: University of Minnesota, Twin Cities
       period: September 2024 – May 2025
       highlights:
         - Taught weekly 50-minute sections for about 30 students on probability, sampling,
           hypothesis testing, regression, and R.
-        - Developed slides, held office hours, and assessed assignments and exams through
-          Gradescope. Shared teaching materials with the course team.
-        - ELP 1, highest Spoken English Test for Teaching Assistants rating (equivalent
-          to TOEFL iBT Speaking 27–30/30 or IELTS Speaking 8.5–9.0/9).
-        - "Supervisors: Yuyoung Park, Aritra Banerjee, and Kazeem Adepoju."
-  professional:
-    - slug: huatai-insurance-internship
-      title: Huatai Insurance Customer Modeling
-      description: Customer-value modeling and segmentation of one million records.
-      category: Applied Data Science
-      period: June – August 2024
-      start: 2024-06
-      end: 2024-08
-      supervisor: Lifeng Wang, Manager of Strategy and Innovation Development, Huatai
-        P&C
-      institution: Huatai Property & Casualty Insurance Co., Ltd (A Chubb Company)
-      summary: As an intern in the Management Department of Exclusive Agency, I modeled
-        customer value to support segmentation.
-      highlights:
-        - Used decision trees and regression on one million exclusive-agency customer
-          records to examine predictors of customer value.
-        - Co-developed a classifier for new customers and segmented existing customers
-          using quadrant-based rules and k-means in R, matching segments to agencies.
+        - Developed instructional slides, held office hours, and assessed weekly assignments
+          and exam responses through Gradescope. Shared teaching materials with the course
+          team.
+        - "Teaching-language qualification: ELP 1, the highest rating on the Spoken English
+          Test for Teaching Assistants (equivalent to TOEFL iBT Speaking 27–30/30 or IELTS
+          Speaking 8.5–9.0/9)."
+      supervisor: Yuyoung Park, Aritra Banerjee, Kazeem Adepoju, University of Minnesota
+      url: https://github.com/Williamzcy0929/STAT-3011-25Spring
+  professional: []
   skills:
     Programming: Python, R, C/C++, Java, OCaml, Swift, MATLAB, SQL
     Machine Learning: PyTorch, TensorFlow, scikit-learn, Hugging Face
     Scientific Computing: Scanpy, Seurat, NumPy, pandas
     Tools: Git, SQLite, Selenium, LaTeX, Markdown, SPSS
     Interests: Photography, snowboarding, car racing, cycling, powerlifting
+  research_interests:
+    - Applications of foundation models and LLM-based agents for biomedical analysis
+    - Deep learning methods for biomedical data analysis and multimodal integration

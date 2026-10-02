@@ -1,12 +1,12 @@
 ---
-title: PaperEval
-deliverable_url: https://github.com/Williamzcy0929/PaperEval
-description: Reproducible data collection and LLM workflows for peer-review analysis.
-category: Methods & Research Infrastructure
-layout: page
+title: "PaperEval"
+description: "Reproducible data collection and LLM workflows for peer-review analysis."
+category: "Methods & Research Infrastructure"
 importance: 4
 featured: false
-period: March – September 2025
+period: "March – September 2025"
+layout: "page"
+deliverable_url: "https://github.com/Williamzcy0929/PaperEval"
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
@@ -17,14 +17,15 @@ I built data pipelines and LLM-based workflows for acceptance prediction, manusc
 
 ## My Contributions
 
-- Built Selenium and asynchronous OpenReview pipelines with JSON storage and resumable checkpoints for papers, reviews, scores, author responses, and metadata; extracted author contact information from PDFs with PyMuPDF.
-- Fine-tuned GPT-4o for acceptance prediction with progressively richer inputs: paper metadata, reviewer scores, and review comments. Implemented training-data preparation and classification evaluation.
-- Developed agent workflows for manuscript and figure assessment, review-response scoring, and response generation; evaluated generated responses against replies from accepted and rejected submissions.
-- Designed a bounded Gaussian-noise mapping from acceptance levels to continuous constructiveness targets.
+- Built Selenium and asynchronous data-collection pipelines for major machine-learning conferences on OpenReview, storing papers, reviews, scores, author responses, and metadata in JSON with resumable checkpoints.
+- Extracted author contact information from conference PDFs with PyMuPDF to enrich OpenReview metadata.
+- Fine-tuned GPT-4o for acceptance prediction using progressively richer inputs: paper metadata, reviewer scores, and review comments. Implemented training-data preparation and classification evaluation workflows.
+- Developed LLM-based agent workflows for manuscript and figure assessment, review-response scoring, and response generation. Evaluated generated responses against author replies from accepted and rejected submissions.
+- Designed a bounded Gaussian-noise mapping to convert acceptance levels into continuous constructiveness targets.
 
-**Supervisor:** Prof. Jie Ding, University of Minnesota.
+**Supervision:** Prof. Jie Ding, University of Minnesota.
 
-[View code on GitHub](https://github.com/Williamzcy0929/PaperEval)
+[Software](https://github.com/Williamzcy0929/PaperEval)
 
 [← All research]({{ "/projects/" | relative_url }})
 
