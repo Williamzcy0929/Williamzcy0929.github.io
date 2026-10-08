@@ -35,7 +35,7 @@ nav_order: 3
   <p>{{ entry.summary }}</p>
   <ul>{% for item in entry.highlights %}<li>{{ item }}</li>{% endfor %}</ul>
   {% if entry.supervisor %}<p><strong>Supervision:</strong> {{ entry.supervisor }}</p>{% endif %}
-  {% if entry.url %}<p>{% if entry.slug == "med2state" %}Med2Vec+ prototype: {% endif %}<a href="{{ entry.url }}">GitHub</a>{% if entry.huggingface %} · <a href="{{ entry.huggingface }}">Hugging Face</a>{% endif %}</p>{% endif %}
+  {% if entry.url %}<p><a href="{{ entry.url }}">GitHub</a>{% if entry.huggingface %} · <a href="{{ entry.huggingface }}">Hugging Face</a>{% endif %}</p>{% endif %}
 </section>
 {% endfor %}
 {% endfor %}

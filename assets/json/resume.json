@@ -72,14 +72,16 @@
         "Built marker-gene-based domain annotation with spot- and cell-level labels and an Unknown option. Evaluated agreement with manual annotations using BioLORD-2023 embeddings and within-dataset permutation tests.",
         "Audited sensitivity to color palettes, presentation order, and redundant candidate methods by examining ranking agreement, selected-method overlap, and clustering stability through repeated runs and controlled perturbations."
       ],
-      "url": "https://github.com/Williamzcy0929/L-STAR"
+      "url": "https://github.com/Williamzcy0929/L-STAR",
+      "status": "Accepted for publication in Nature Communications",
+      "citation": "Changyue Zhao and Zhicheng Ji. Visual LLM-guided consensus spatial domain detection with L-STAR."
     },
     {
-      "name": "TRACE",
-      "description": "I developed TRACE, an end-to-end LangGraph workflow for single-cell and spatial pseudotime analysis, implemented in the pseudotime-agent package.",
+      "name": "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence",
+      "description": "I developed TRACE, an end-to-end LangGraph workflow for single-cell and spatial pseudotime analysis, implemented in the trace package.",
       "startDate": "2026-01",
       "highlights": [
-        "Developed pseudotime-agent, an end-to-end LangGraph package coordinating Python, R/Seurat, and LLM inference for single-cell and spatial pseudotime analysis. Implemented schema validation, corrective retries, provenance tracking, and fingerprint-validated replay with support for expert-supplied inputs.",
+        "Developed trace, an end-to-end LangGraph package coordinating Python, R/Seurat, and LLM inference for single-cell and spatial pseudotime analysis. Implemented schema validation, corrective retries, provenance tracking, and fingerprint-validated replay with support for expert-supplied inputs.",
         "Designed parallel UMAP and t-SNE workflows for cell-type annotation, lineage-family adjudication, and cross-embedding trajectory fusion, using assay-aware molecular evidence for scRNA-seq and scATAC-seq inputs.",
         "Designed LLM-guided spatial process-instance resolution using molecular profiles and tissue topology to distinguish repeated local processes within connected tissue, with explicit cell membership, local seeds, and unresolved assignments.",
         "Implemented expression-weighted graph pseudotime with instance-level ordering review and partial-trajectory support. Separated molecular lineage hypotheses, physical feasibility, and spatial evidence in auditable execution rules.",
@@ -87,19 +89,21 @@
         "Designed and implemented bPOS, an exact branch-aware pseudotime metric that jointly evaluates lineage membership and within-lineage ordering using scalable block processing and inclusion-exclusion counting.",
         "Diagnosed a bug in the dyneval-based benchmark evaluation of F1branches. Reimplemented the published Jaccard, recovery, relevance, and harmonic-mean definition over the full cell scope and added diagnostic comparisons.",
         "Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN. Designed synthetic negative controls, perturbation tests, and staged replay experiments to assess spatial assumptions, instance partitioning, and pseudotime stability."
-      ]
+      ],
+      "status": "Manuscript in preparation",
+      "citation": "Changyue Zhao and Zhicheng Ji. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence."
     },
     {
       "name": "Med2State",
-      "description": "I am designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal health records, building on the implemented Med2Vec+ prototype.",
+      "description": "I am designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.",
       "startDate": "2025-11",
       "highlights": [
-        "Designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal health records, with configurable evidence encoders and disease, procedure, and treatment channels.",
-        "Formulating partial-evidence learning with longitudinal context. Planning concept-readout, similar-state retrieval, and trajectory evaluations to assess semantic content and missing-input behavior before validating downstream use.",
-        "Implemented Med2Vec+, the note-aware PyTorch prototype underlying this research direction, with multi-aspect patient histories, demographic covariates, and visit-aligned BioClinicalBERT note embeddings.",
-        "Designed multi-head cross-attention to condition EHR embeddings on clinical notes. Built Med2Vec-compatible input and output interfaces and component-ablation workflows for the prototype."
+        "Designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.",
+        "Designing configurable encoders for demographics, measurements, structured EHR events, text, and images. Exploring semantic attention and low-rank fusion with temporal updates that account for irregular visit intervals.",
+        "Formulating evidence-subset and longitudinal learning objectives with typed concept readouts, using only information available at each state time to preserve clinical semantics and prevent future-data leakage.",
+        "Planning controlled simulations, component ablations, and clinical-record evaluations of concept readout, similar-visit retrieval, and trajectory analysis, with stress tests for missing inputs and model misspecification."
       ],
-      "url": "https://github.com/Williamzcy0929/Med2Vec_Plus"
+      "status": "Ongoing methodological research"
     },
     {
       "name": "PaperEval",
@@ -125,7 +129,8 @@
         "Designed a mixture-of-experts model with regression, MLP, and Transformer experts for different feature types and a learned gating network. Compared it with random forest and XGBoost baselines.",
         "Placed 7th in Innovation & Creativity."
       ],
-      "endDate": "2025-04"
+      "endDate": "2025-04",
+      "status": "7th place in Innovation & Creativity"
     },
     {
       "name": "Public Health Equity Data Challenge",
@@ -136,7 +141,8 @@
         "Built a mental-health prediction interface in tkinter backed by an AdaBoost model in scikit-learn.",
         "Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division."
       ],
-      "endDate": "2024-11"
+      "endDate": "2024-11",
+      "status": "Top 25% of the undergraduate division"
     },
     {
       "name": "Overlapping Group LASSO",

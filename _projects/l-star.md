@@ -6,7 +6,7 @@ importance: 1
 featured: true
 period: "September 2025 – present"
 layout: "page"
-status: "First-author manuscript accepted in principle at Nature Communications"
+status: "Accepted for publication in Nature Communications"
 deliverable_url: "https://www.biorxiv.org/content/10.64898/2026.08.25.747158v1.abstract"
 ---
 
@@ -16,7 +16,7 @@ deliverable_url: "https://www.biorxiv.org/content/10.64898/2026.08.25.747158v1.a
 
 Changyue Zhao and Zhicheng Ji. Visual LLM-guided consensus spatial domain detection with L-STAR.
 
-_First-author manuscript accepted in principle at Nature Communications._
+_Accepted for publication in Nature Communications._
 
 I developed a workflow that uses visual LLM comparisons to select spatial domain detection methods and combine their clusterings into a consensus tissue partition.
 

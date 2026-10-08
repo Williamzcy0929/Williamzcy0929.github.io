@@ -8,7 +8,7 @@
     "featured": true,
     "period": "September 2025 – present",
     "slug": "l-star",
-    "status": "First-author manuscript accepted in principle at Nature Communications"
+    "status": "Accepted for publication in Nature Communications"
   },
   {
     "title": "TRACE",
@@ -18,11 +18,12 @@
     "featured": true,
     "period": "January 2026 – present",
     "slug": "trace",
-    "status": "Manuscript in preparation"
+    "status": "Manuscript in preparation",
+    "publication_title": "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
   },
   {
     "title": "Med2State",
-    "description": "Structured patient-state representations from incomplete multimodal health records.",
+    "description": "Structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history.",
     "category": "Biomedical AI",
     "importance": 3,
     "featured": true,
