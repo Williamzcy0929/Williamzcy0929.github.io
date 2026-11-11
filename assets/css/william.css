@@ -1,5 +1,5 @@
 .william-home {
-  --research-accent: #175b55;
+  --research-accent: var(--global-theme-color);
   --research-muted: #5f6b70;
   --research-line: #dfe6e4;
   padding-top: 1.6rem;
@@ -14,7 +14,6 @@
   white-space: nowrap;
 }
 html[data-theme="dark"] .william-home {
-  --research-accent: #8ed0c0;
   --research-muted: #b0bbb8;
   --research-line: #3c4844;
 }
