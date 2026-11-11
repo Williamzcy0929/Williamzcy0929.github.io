@@ -297,9 +297,15 @@ cv:
       url: https://doi.org/10.1038/s41467-026-78923-w
       citation: Zhao, C., and Ji, Z. (2026). Visual LLM-guided consensus spatial domain
         detection with L-STAR. Nature Communications. doi:10.1038/s41467-026-78923-w.
+      author_names:
+        - Changyue Zhao
+        - Zhicheng Ji
     - slug: trace
       title: "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
       authors: Zhao, C., and Ji, Z.
       status: Manuscript in preparation
       citation: "Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view
         Evidence. Manuscript in preparation."
+      author_names:
+        - Changyue Zhao
+        - Zhicheng Ji
