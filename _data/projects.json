@@ -1,20 +1,9 @@
 [
   {
-    "title": "L-STAR",
-    "deliverable_url": "https://www.biorxiv.org/content/10.64898/2026.08.25.747158v1.abstract",
-    "description": "Visual LLM-guided consensus spatial domain detection.",
+    "title": "TRACE",
+    "description": "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac.",
     "category": "Biomedical AI",
     "importance": 1,
-    "featured": true,
-    "period": "September 2025 – present",
-    "slug": "l-star",
-    "status": "Accepted for publication in Nature Communications"
-  },
-  {
-    "title": "TRACE",
-    "description": "Evidence-guided agents for cell-state trajectories and spatial pseudotime.",
-    "category": "Biomedical AI",
-    "importance": 2,
     "featured": true,
     "period": "January 2026 – present",
     "slug": "trace",
@@ -23,18 +12,29 @@
   },
   {
     "title": "Med2State",
-    "description": "Structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history.",
+    "description": "A Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records and longitudinal clinical history.",
     "category": "Biomedical AI",
-    "importance": 3,
+    "importance": 2,
     "featured": true,
     "period": "November 2025 – present",
     "status": "Ongoing methodological research",
     "slug": "med2state"
   },
   {
+    "title": "L-STAR",
+    "deliverable_url": "https://www.nature.com/articles/s41467-026-78923-w",
+    "description": "Visual LLM-guided consensus spatial domain detection with Python LLM workflows and consensus clustering in R.",
+    "category": "Biomedical AI",
+    "importance": 3,
+    "featured": true,
+    "period": "September 2025 – October 2026",
+    "slug": "l-star",
+    "status": "Published in Nature Communications (2026)"
+  },
+  {
     "title": "PaperEval",
     "deliverable_url": "https://github.com/Williamzcy0929/PaperEval",
-    "description": "Reproducible data collection and LLM workflows for peer-review analysis.",
+    "description": "OpenReview pipelines, manuscript-assessment agents, and fine-tuned models for acceptance prediction and author-response grading.",
     "category": "Methods & Research Infrastructure",
     "importance": 4,
     "featured": false,
@@ -43,13 +43,13 @@
   },
   {
     "title": "MUDAC 2025",
-    "description": "Feature-specific experts, survival analysis, and sparse multimodal data.",
+    "description": "Mentoring-match prediction with feature engineering, survival analysis, and a mixture-of-experts model.",
     "category": "Applied Data Science",
     "importance": 5,
     "featured": false,
     "period": "March – April 2025",
     "slug": "mudac-2025",
-    "status": "7th place in Innovation & Creativity"
+    "status": "7th in Innovation & Creativity among approximately 200 teams"
   },
   {
     "title": "Public Health Equity Data Challenge",

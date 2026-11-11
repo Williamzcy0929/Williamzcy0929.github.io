@@ -11,16 +11,16 @@ status: "Top 25% of the undergraduate division"
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
 
-**October – November 2024**
+**October – November 2024 · School of Public Health, University of Minnesota, Twin Cities**
 
 _Top 25% of the undergraduate division._
 
-I analyzed questionnaire data on inequities in access to mental-health resources and co-authored the analysis report and poster.
+I investigated inequities in mental-health resource access and developed a prediction interface using Hennepin County questionnaire data.
 
 ## My Contributions
 
-- Analyzed Hennepin County questionnaire data on inequities in access to mental-health resources using multiple regression, ridge regression, decision trees, and causal inference methods.
-- Built a mental-health prediction interface in tkinter backed by an AdaBoost model in scikit-learn.
+- Investigated inequities in access to mental-health resources using Hennepin County questionnaire data. Applied multiple regression, ridge regression, decision trees, and causal inference methods.
+- Developed a tkinter interface for mental-health prediction using AdaBoost in scikit-learn.
 - Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division.
 
 **Supervision:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.

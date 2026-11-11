@@ -12,7 +12,7 @@ permalink: "/"
     <div class="intro-copy">
     <h1>Changyue <span>(William)</span> Zhao</h1>
     <p class="intro-focus">Building AI methods for biomedical discovery</p>
-    <p class="intro-text">I am a Master of Biostatistics student at Duke University. I currently conduct research in the <a href="https://zji90.github.io/">Ji Lab</a> at Duke University School of Medicine.</p>
+    <p class="intro-text">I am a Master of Biostatistics student in the Health AI Track at Duke University. I currently conduct research in the <a href="https://zji90.github.io/">Ji Lab</a> at Duke University School of Medicine.</p>
     <p class="intro-text">My research interests lie at the intersection of computational biology and artificial intelligence, with a focus on foundation models, AI agents, and deep learning for biomedical discovery.</p>
     <div class="intro-links">
       <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>

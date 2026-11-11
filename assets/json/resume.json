@@ -17,9 +17,12 @@
         "url": "https://github.com/Williamzcy0929"
       },
       {
-        "network": "LinkedIn",
-        "username": "changyue-william-zhao",
-        "url": "https://www.linkedin.com/in/changyue-william-zhao/"
+        "network": "Personal Website",
+        "url": "https://williamzcy0929.github.io/"
+      },
+      {
+        "network": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=qmnDUYcAAAAJ&hl=en"
       }
     ]
   },
@@ -27,23 +30,24 @@
     {
       "institution": "Duke University",
       "area": "Biostatistics",
-      "studyType": "Master of Biostatistics",
+      "studyType": "Master of Biostatistics, Health AI Track",
       "score": "GPA: 4.0/4.0",
       "startDate": "2025-08",
       "highlights": [
-        "Selected Coursework: Statistical Methods for Learning and Discovery, Deep Learning for Health Data, High-Dimensional Statistics and Machine Learning, Real Analysis, Statistical Inference (Ph.D. Level)",
-        "Ranked second in Real Analysis by course grade (Instructor: Michael C. Reed)"
+        "Selected Coursework: Statistical Methods for Learning and Discovery, Deep Learning for Health Data, Natural Language Processing, High-Dimensional Statistics and Machine Learning, Real Analysis (Instructor: Michael C. Reed, ranked 2nd), Statistical Inference (Ph.D. Level)"
       ]
     },
     {
       "institution": "University of Minnesota, Twin Cities",
       "area": "Statistical Science",
-      "studyType": "Bachelor of Science in Statistical Science; Minor in Computer Science",
+      "studyType": "Bachelor of Science in Statistical Science, Minor in Computer Science",
       "score": "GPA: 4.0/4.0",
       "startDate": "2023-09",
       "highlights": [
-        "Selected Coursework: Mathematical Analysis, Theory of Statistics, Regression and Correlated Data, Statistical Machine Learning, Applied Multivariate Methods, Algorithms and Data Structures, Graduate Data Mining",
-        "Graduated with High Distinction and received the Buehler Memorial Undergraduate Award as one of eight nominees. Named to the CLA Dean's List from Fall 2023 to Spring 2025"
+        "Selected Coursework: Mathematical Foundation (Introduction to Mathematical Analysis), Regression and Correlation Data, Statistical Computing in R, Theory of Statistics, Statistical Machine Learning, Analysis of Categorical Data, Applied Multivariate Methods, Discrete Mathematics, Advanced Programming Principles, Algorithms and Data Structures, Applied Machine Learning, Data Mining (Graduate Level)",
+        "Graduated with High Distinction.",
+        "Received the Buehler Memorial Undergraduate Award as one of eight nominees.",
+        "Named to the CLA Dean's List in all four semesters (4/4)."
       ],
       "endDate": "2025-05"
     },
@@ -51,107 +55,104 @@
       "institution": "Shandong University of Finance and Economics",
       "area": "Finance",
       "studyType": "Bachelor of Economics in Finance",
-      "score": "GPA: 92.86/100; WES GPA: 3.89/4.0",
+      "score": "GPA: 92.86/100 (WES GPA: 3.89/4.0)",
       "startDate": "2021-09",
       "highlights": [
-        "Selected Coursework: Advanced Mathematics, Linear Algebra, Probability Theory and Statistics, Applied Statistics, Python, Microeconomics, Finance",
-        "Received the SDUFE First-Prize Scholarship in 2022 and 2023"
+        "Selected Coursework: Advanced Mathematics (Calculus, Introduction to Ordinary Differential Equations), Linear Algebra, Probability Theory and Statistics, Applied Statistics, Python",
+        "Received the SDUFE First-Prize Scholarship in 2022 and 2023."
       ],
       "endDate": "2025-06"
     }
   ],
   "projects": [
     {
-      "name": "L-STAR",
-      "description": "I developed a workflow that uses visual LLM comparisons to select spatial domain detection methods and combine their clusterings into a consensus tissue partition.",
-      "startDate": "2025-09",
-      "highlights": [
-        "Developed the L-STAR visual LLM workflow for spatial domain detection, with structured prompts, repeated comparisons of spatial maps and optional histology, JSON logs, and win-rate-based method selection.",
-        "Implemented consensus clustering with co-assignment matrices and average linkage. Added an all-wise comparison mode that aggregates repeated rankings to select ensemble members with one LLM call per repeat.",
-        "Designed comparative experiments across six spatial transcriptomics datasets to examine ensemble size, alternative LLMs, and fixed-method consensus baselines, separating the roles of method selection and clustering aggregation.",
-        "Built marker-gene-based domain annotation with spot- and cell-level labels and an Unknown option. Evaluated agreement with manual annotations using BioLORD-2023 embeddings and within-dataset permutation tests.",
-        "Audited sensitivity to color palettes, presentation order, and redundant candidate methods by examining ranking agreement, selected-method overlap, and clustering stability through repeated runs and controlled perturbations."
-      ],
-      "url": "https://github.com/Williamzcy0929/L-STAR",
-      "status": "Accepted for publication in Nature Communications",
-      "citation": "Changyue Zhao and Zhicheng Ji. Visual LLM-guided consensus spatial domain detection with L-STAR."
-    },
-    {
-      "name": "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence",
-      "description": "I developed TRACE, an end-to-end LangGraph workflow for single-cell and spatial pseudotime analysis, implemented in the trace package.",
+      "name": "TRACE: LLM-guided Trajectory Inference",
+      "description": "I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/LangGraph package for scRNA-seq, scATAC-seq, and spatial transcriptomics analysis.",
       "startDate": "2026-01",
       "highlights": [
-        "Developed trace, an end-to-end LangGraph package coordinating Python, R/Seurat, and LLM inference for single-cell and spatial pseudotime analysis. Implemented schema validation, corrective retries, provenance tracking, and fingerprint-validated replay with support for expert-supplied inputs.",
-        "Designed parallel UMAP and t-SNE workflows for cell-type annotation, lineage-family adjudication, and cross-embedding trajectory fusion, using assay-aware molecular evidence for scRNA-seq and scATAC-seq inputs.",
-        "Designed LLM-guided spatial process-instance resolution using molecular profiles and tissue topology to distinguish repeated local processes within connected tissue, with explicit cell membership, local seeds, and unresolved assignments.",
-        "Implemented expression-weighted graph pseudotime with instance-level ordering review and partial-trajectory support. Separated molecular lineage hypotheses, physical feasibility, and spatial evidence in auditable execution rules.",
-        "Built an optional completion module with evidence-based assignment review and donor-restricted imputation. Preserved original inference outputs and unresolved multi-instance assignments, keeping graph-derived and imputed values distinct.",
-        "Designed and implemented bPOS, an exact branch-aware pseudotime metric that jointly evaluates lineage membership and within-lineage ordering using scalable block processing and inclusion-exclusion counting.",
-        "Diagnosed a bug in the dyneval-based benchmark evaluation of F1branches. Reimplemented the published Jaccard, recovery, relevance, and harmonic-mean definition over the full cell scope and added diagnostic comparisons.",
-        "Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN. Designed synthetic negative controls, perturbation tests, and staged replay experiments to assess spatial assumptions, instance partitioning, and pseudotime stability."
+        "Develop TRACE, an LLM-guided trajectory inference agent that achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets while automatically identifying root states from molecular evidence.",
+        "Build trace, an end-to-end Python package using LangGraph to coordinate R/Seurat analysis and LLM reasoning. Use Seurat for normalization, dimensionality reduction, clustering, and marker-gene analysis, and Signac for scATAC-seq preprocessing and gene-activity estimation.",
+        "Design structured prompts and targeted molecular-evidence queries to integrate UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root identification.",
+        "Develop spatial trajectory inference combining molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Implement graph-based pseudotime estimation with local root cells, retaining ambiguous assignments and partially resolved trajectories.",
+        "Design pPOS to jointly evaluate lineage membership and within-lineage ordering. Implement blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.",
+        "Investigate discrepancies in dyneval-based F1branches evaluation. Reimplement the metric according to its published definition over the full cell set, with diagnostics for cell coverage and branch recovery.",
+        "Implement comparative evaluation of TRACE, Monocle 3, Slingshot, and TSCAN using branch membership and within-lineage pseudotime ordering."
       ],
-      "status": "Manuscript in preparation",
-      "citation": "Changyue Zhao and Zhicheng Ji. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence."
+      "status": "Manuscript in preparation"
     },
     {
       "name": "Med2State",
-      "description": "I am designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.",
+      "description": "I develop Med2State, a Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records and longitudinal clinical history.",
       "startDate": "2025-11",
       "highlights": [
-        "Designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.",
-        "Designing configurable encoders for demographics, measurements, structured EHR events, text, and images. Exploring semantic attention and low-rank fusion with temporal updates that account for irregular visit intervals.",
-        "Formulating evidence-subset and longitudinal learning objectives with typed concept readouts, using only information available at each state time to preserve clinical semantics and prevent future-data leakage.",
-        "Planning controlled simulations, component ablations, and clinical-record evaluations of concept readout, similar-visit retrieval, and trajectory analysis, with stress tests for missing inputs and model misspecification."
+        "Develop Med2State, a deep learning model in Python and PyTorch that learns structured patient-state representations from incomplete multimodal records and longitudinal clinical history, with separate disease, procedure, and treatment channels.",
+        "Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention, low-rank fusion, and temporal models for irregular visits.",
+        "Develop learning objectives and clinical concept readouts for incomplete longitudinal records."
       ],
       "status": "Ongoing methodological research"
     },
     {
+      "name": "L-STAR: LLM-guided Spatial Domain Detection",
+      "description": "I developed L-STAR, combining Python LLM workflows for spatial-domain method selection with consensus clustering in R and spatial expression analysis using Seurat and SpatialExperiment.",
+      "startDate": "2025-09",
+      "highlights": [
+        "Developed L-STAR, an LLM-guided spatial domain detection framework that achieved the highest average normalized ARI across evaluation datasets, outperforming individual methods and fixed-method consensus.",
+        "Designed structured prompts and implemented Python workflows to compare candidate domain maps using tissue context and optional histology.",
+        "Implemented repeated pairwise comparisons and win-rate ranking for method selection. Combined selected domain assignments through co-assignment matrices and consensus clustering in R.",
+        "Processed spatial expression data with Seurat and SpatialExperiment and built marker-guided domain annotation. Distinguished tissue regions from cell types by sampling level, retaining Unknown for insufficient evidence. Evaluated agreement using BioLORD-2023 embeddings and within-dataset permutation tests.",
+        "Benchmarked L-STAR across six spatial transcriptomics datasets against individual methods and fixed-method consensus. Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified selected-method redundancy."
+      ],
+      "endDate": "2026-10",
+      "status": "Published in Nature Communications (2026)",
+      "url": "https://github.com/Williamzcy0929/L-STAR"
+    },
+    {
       "name": "PaperEval",
-      "description": "I built data pipelines and LLM-based workflows for acceptance prediction, manuscript assessment, and review-response evaluation.",
+      "description": "I built OpenReview data pipelines, fine-tuned acceptance-prediction and response-grading models, and used the fine-tuned grader to evaluate generated author responses.",
       "startDate": "2025-03",
       "highlights": [
-        "Built Selenium and asynchronous data-collection pipelines for major machine-learning conferences on OpenReview, storing papers, reviews, scores, author responses, and metadata in JSON with resumable checkpoints.",
-        "Extracted author contact information from conference PDFs with PyMuPDF to enrich OpenReview metadata.",
-        "Fine-tuned GPT-4o for acceptance prediction using progressively richer inputs: paper metadata, reviewer scores, and review comments. Implemented training-data preparation and classification evaluation workflows.",
-        "Developed LLM-based agent workflows for manuscript and figure assessment, review-response scoring, and response generation. Evaluated generated responses against author replies from accepted and rejected submissions.",
-        "Designed a bounded Gaussian-noise mapping to convert acceptance levels into continuous constructiveness targets."
+        "Built resumable OpenReview pipelines using Selenium and asynchronous requests, with structured JSON storage for papers, reviews, scores, and responses. Extracted author contact information from PDFs with PyMuPDF to enrich submission metadata.",
+        "Prepared training data and fine-tuned GPT-4o for paper acceptance prediction. Evaluated predictions using progressively richer inputs comprising paper metadata, reviewer scores, and review text.",
+        "Developed LLM-based agents to assess figures and tables in the context of full manuscripts and suggest improvements to clarity, readability, and presentation.",
+        "Fine-tuned GPT-4o mini as an LLM-based grader to score and compare author responses. Constructed proxy scoring targets from acceptance levels using bounded Gaussian noise.",
+        "Trained a reply-generation model and used the fine-tuned grader to compare generated responses with author replies from accepted and rejected submissions."
       ],
       "endDate": "2025-09",
       "url": "https://github.com/Williamzcy0929/PaperEval"
     },
     {
-      "name": "MUDAC 2025",
-      "description": "I developed features and models for sparse, high-dimensional numerical and text data in the Midwest Undergraduate Data Analysis Competition.",
+      "name": "MUDAC (Midwest Undergraduate Data Analysis Competition) 2025",
+      "description": "I engineered mentoring-match features and modeled match duration and closure with survival analysis, a causal Bayesian network, and a mixture-of-experts model.",
       "startDate": "2025-03",
       "highlights": [
-        "Encoded sparse, high-dimensional numerical and text data with embeddings, sentiment scores, and pairwise similarities.",
-        "Applied Cox proportional hazards regression and a causal Bayesian network to study match duration and closure.",
+        "Engineered features from sparse, high-dimensional numerical and text data for mentoring-match prediction, including embeddings, sentiment scores, and pairwise similarities.",
+        "Modeled match duration and closure using Cox proportional hazards regression and a causal Bayesian network.",
         "Designed a mixture-of-experts model with regression, MLP, and Transformer experts for different feature types and a learned gating network. Compared it with random forest and XGBoost baselines.",
-        "Placed 7th in Innovation & Creativity."
+        "Placed 7th in Innovation & Creativity among approximately 200 teams at MUDAC 2025."
       ],
       "endDate": "2025-04",
-      "status": "7th place in Innovation & Creativity"
+      "status": "7th in Innovation & Creativity among approximately 200 teams"
     },
     {
-      "name": "Public Health Equity Data Challenge",
-      "description": "I analyzed questionnaire data on inequities in access to mental-health resources and co-authored the analysis report and poster.",
+      "name": "UMN & Hennepin County Public Health Equity Data Challenge",
+      "description": "I investigated inequities in mental-health resource access and developed a prediction interface using Hennepin County questionnaire data.",
       "startDate": "2024-10",
       "highlights": [
-        "Analyzed Hennepin County questionnaire data on inequities in access to mental-health resources using multiple regression, ridge regression, decision trees, and causal inference methods.",
-        "Built a mental-health prediction interface in tkinter backed by an AdaBoost model in scikit-learn.",
+        "Investigated inequities in access to mental-health resources using Hennepin County questionnaire data. Applied multiple regression, ridge regression, decision trees, and causal inference methods.",
+        "Developed a tkinter interface for mental-health prediction using AdaBoost in scikit-learn.",
         "Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division."
       ],
       "endDate": "2024-11",
       "status": "Top 25% of the undergraduate division"
     },
     {
-      "name": "Overlapping Group LASSO",
-      "description": "I compared overlapping group LASSO implementations and implemented an optimized algorithm in C for integration with R.",
+      "name": "Overlapping Group LASSO Regression R Package Implementation",
+      "description": "I compared overlapping group LASSO implementations through a simulation study and implemented the optimized algorithm in C for R integration.",
       "startDate": "2024-09",
       "highlights": [
         "Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in the R package VennLasso under matched problem sizes and convergence tolerances.",
-        "Simulated 1,000 large sparse-matrix datasets with overlapping groups and compared runtime using t-tests.",
-        "Implemented the optimized algorithm in C for integration with R."
+        "Designed a simulation study with 1,000 large sparse-matrix datasets and overlapping groups. Compared implementation runtimes using t-tests.",
+        "Implemented the optimized overlapping-group LASSO algorithm in C for integration with R."
       ],
       "endDate": "2025-05"
     }
@@ -163,37 +164,75 @@
     },
     {
       "name": "Machine Learning",
-      "keywords": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face"]
+      "keywords": ["PyTorch", "TensorFlow", "scikit-learn", "Hugging Face", "NumPy", "pandas"]
     },
     {
-      "name": "Scientific Computing",
-      "keywords": ["Scanpy", "Seurat", "NumPy", "pandas"]
+      "name": "Bioinformatics",
+      "keywords": ["Seurat", "Signac", "Scanpy", "scDesign3", "Monocle 3", "Slingshot", "TSCAN"]
     },
     {
       "name": "Tools",
-      "keywords": ["Git", "SQLite", "Selenium", "LaTeX", "Markdown", "SPSS"]
+      "keywords": ["Git", "SQLite", "Selenium", "LangGraph", "LaTeX", "Markdown", "SPSS"]
     }
   ],
   "work": [
     {
-      "name": "Duke University",
+      "name": "Department of Biostatistics and Bioinformatics, Duke University",
       "position": "Teaching Assistant: BIOSTAT 830",
       "startDate": "2026-08",
       "highlights": [
-        "Hold weekly office hours and grade assignments in graduate statistical inference, asymptotic theory, and decision theory.",
-        "Prepare and verify proof-based LaTeX assignment solutions. Format and proofread lecture slides, standardizing mathematical notation and converting formulas into editable PowerPoint equations."
+        "Help develop and refine BIOSTAT 830, a new course first offered in Fall 2026 to bridge undergraduate statistical theory and PhD-level inference. Quickly adapt lecture materials and proof-based assignment solutions while building course resources from the ground up.",
+        "Hold weekly office hours and grade assignments for a class of 22 students in statistical inference, asymptotic theory, and decision theory. Discuss common errors with the instructor to guide future lectures.",
+        "Prepare and verify proof-based LaTeX solutions, format and proofread slides, and manage materials in Canvas. Standardize notation and convert formulas into editable PowerPoint equations."
       ]
     },
     {
-      "name": "University of Minnesota, Twin Cities",
+      "name": "School of Statistics, University of Minnesota, Twin Cities",
       "position": "Undergraduate Teaching Assistant: STAT 3011",
       "startDate": "2024-09",
       "highlights": [
-        "Taught weekly 50-minute sections for about 30 students on probability, sampling, hypothesis testing, regression, and R.",
-        "Developed instructional slides, held office hours, and assessed weekly assignments and exam responses through Gradescope. Shared teaching materials with the course team.",
-        "Teaching-language qualification: ELP 1, the highest rating on the Spoken English Test for Teaching Assistants (equivalent to TOEFL iBT Speaking 27–30/30 or IELTS Speaking 8.5–9.0/9)."
+        "Taught weekly 50-minute sections for about 30 students on probability, sampling, hypothesis testing, regression, and statistical programming in R.",
+        "Prepared instructional slides and managed course materials in Canvas for the teaching team. Held office hours and graded weekly assignments and exam responses through Gradescope.",
+        "English-language teaching qualification: ELP 1, the highest rating on the Spoken English Test for Teaching Assistants (equivalent to TOEFL iBT Speaking 27–30/30 or IELTS Speaking 8.5–9.0/9)."
       ],
       "endDate": "2025-05"
+    }
+  ],
+  "publications": [
+    {
+      "slug": "l-star",
+      "title": "Visual LLM-guided consensus spatial domain detection with L-STAR",
+      "authors": "Zhao, C., and Ji, Z.",
+      "year": "2026",
+      "publisher": "Nature Communications",
+      "releaseDate": "2026-11-03",
+      "doi": "10.1038/s41467-026-78923-w",
+      "url": "https://doi.org/10.1038/s41467-026-78923-w",
+      "citation": "Zhao, C., and Ji, Z. (2026). Visual LLM-guided consensus spatial domain detection with L-STAR. Nature Communications. doi:10.1038/s41467-026-78923-w."
+    },
+    {
+      "slug": "trace",
+      "title": "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence",
+      "authors": "Zhao, C., and Ji, Z.",
+      "status": "Manuscript in preparation",
+      "citation": "Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence. Manuscript in preparation."
+    }
+  ],
+  "interests": [
+    {
+      "name": "Photography"
+    },
+    {
+      "name": "Snowboarding"
+    },
+    {
+      "name": "Car Racing"
+    },
+    {
+      "name": "Cycling"
+    },
+    {
+      "name": "Fitness Exercise"
     }
   ]
 }

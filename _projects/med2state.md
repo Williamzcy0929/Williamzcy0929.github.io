@@ -1,28 +1,29 @@
 ---
-layout: page
-title: Med2State
-description: Structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history.
-category: Biomedical AI
-importance: 3
+title: "Med2State"
+description: "A Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records and longitudinal clinical history."
+category: "Biomedical AI"
+importance: 2
 featured: true
-period: November 2025 – present
-status: Ongoing methodological research
+period: "November 2025 – present"
+layout: "page"
+status: "Ongoing methodological research"
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
 
-**November 2025 – present · Duke University School of Medicine**
+**November 2025 – present · School of Medicine, Duke University**
 
-I am designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.
+_Ongoing methodological research._
 
-## Current Research Direction
+I develop Med2State, a Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records and longitudinal clinical history.
 
-- Designing Med2State, a framework for learning structured patient-state representations from incomplete multimodal clinical evidence and longitudinal history, with separate disease, procedure, and treatment channels.
-- Designing configurable encoders for demographics, measurements, structured EHR events, text, and images. Exploring semantic attention and low-rank fusion with temporal updates that account for irregular visit intervals.
-- Formulating evidence-subset and longitudinal learning objectives with typed concept readouts, using only information available at each state time to preserve clinical semantics and prevent future-data leakage.
-- Planning controlled simulations, component ablations, and clinical-record evaluations of concept readout, similar-visit retrieval, and trajectory analysis, with stress tests for missing inputs and model misspecification.
+## My Contributions
 
-**Supervisor:** Prof. Chuan Hong, Duke University.
+- Develop Med2State, a deep learning model in Python and PyTorch that learns structured patient-state representations from incomplete multimodal records and longitudinal clinical history, with separate disease, procedure, and treatment channels.
+- Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention, low-rank fusion, and temporal models for irregular visits.
+- Develop learning objectives and clinical concept readouts for incomplete longitudinal records.
+
+**Supervision:** Prof. Anru Zhang, Duke University.
 
 [← All research]({{ "/projects/" | relative_url }})
 

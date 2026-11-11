@@ -1,8 +1,8 @@
 ---
-title: "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
-description: "Evidence-guided agents for cell-state trajectories and spatial pseudotime."
+title: "TRACE"
+description: "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac."
 category: "Biomedical AI"
-importance: 2
+importance: 1
 featured: true
 period: "January 2026 – present"
 layout: "page"
@@ -11,24 +11,25 @@ status: "Manuscript in preparation"
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
 
-**January 2026 – present**
+**January 2026 – present · Department of Biostatistics and Bioinformatics, Duke University**
 
-Changyue Zhao and Zhicheng Ji. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence.
+Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence. Manuscript in preparation.
 
 _Manuscript in preparation._
 
-I developed TRACE, an end-to-end LangGraph workflow for single-cell and spatial pseudotime analysis, implemented in the trace package.
+I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/LangGraph package for scRNA-seq, scATAC-seq, and spatial transcriptomics analysis.
 
 ## My Contributions
 
-- Developed trace, an end-to-end LangGraph package coordinating Python, R/Seurat, and LLM inference for single-cell and spatial pseudotime analysis. Implemented schema validation, corrective retries, provenance tracking, and fingerprint-validated replay with support for expert-supplied inputs.
-- Designed parallel UMAP and t-SNE workflows for cell-type annotation, lineage-family adjudication, and cross-embedding trajectory fusion, using assay-aware molecular evidence for scRNA-seq and scATAC-seq inputs.
-- Designed LLM-guided spatial process-instance resolution using molecular profiles and tissue topology to distinguish repeated local processes within connected tissue, with explicit cell membership, local seeds, and unresolved assignments.
-- Implemented expression-weighted graph pseudotime with instance-level ordering review and partial-trajectory support. Separated molecular lineage hypotheses, physical feasibility, and spatial evidence in auditable execution rules.
-- Built an optional completion module with evidence-based assignment review and donor-restricted imputation. Preserved original inference outputs and unresolved multi-instance assignments, keeping graph-derived and imputed values distinct.
-- Designed and implemented bPOS, an exact branch-aware pseudotime metric that jointly evaluates lineage membership and within-lineage ordering using scalable block processing and inclusion-exclusion counting.
-- Diagnosed a bug in the dyneval-based benchmark evaluation of F1branches. Reimplemented the published Jaccard, recovery, relevance, and harmonic-mean definition over the full cell scope and added diagnostic comparisons.
-- Built reproducible comparisons with Monocle 3, Slingshot, and TSCAN. Designed synthetic negative controls, perturbation tests, and staged replay experiments to assess spatial assumptions, instance partitioning, and pseudotime stability.
+- Develop TRACE, an LLM-guided trajectory inference agent that achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets while automatically identifying root states from molecular evidence.
+- Build trace, an end-to-end Python package using LangGraph to coordinate R/Seurat analysis and LLM reasoning. Use Seurat for normalization, dimensionality reduction, clustering, and marker-gene analysis, and Signac for scATAC-seq preprocessing and gene-activity estimation.
+- Design structured prompts and targeted molecular-evidence queries to integrate UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root identification.
+- Develop spatial trajectory inference combining molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Implement graph-based pseudotime estimation with local root cells, retaining ambiguous assignments and partially resolved trajectories.
+- Design pPOS to jointly evaluate lineage membership and within-lineage ordering. Implement blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.
+- Investigate discrepancies in dyneval-based F1branches evaluation. Reimplement the metric according to its published definition over the full cell set, with diagnostics for cell coverage and branch recovery.
+- Implement comparative evaluation of TRACE, Monocle 3, Slingshot, and TSCAN using branch membership and within-lineage pseudotime ordering.
+
+**Supervision:** Prof. Zhicheng Ji, Duke University.
 
 [← All research]({{ "/projects/" | relative_url }})
 
