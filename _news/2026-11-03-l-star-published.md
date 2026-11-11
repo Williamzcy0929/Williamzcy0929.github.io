@@ -4,4 +4,4 @@ date: "2026-11-03 00:00:00-0500"
 inline: true
 ---
 
-Our paper, **[Visual LLM-guided consensus spatial domain detection with L-STAR](https://www.nature.com/articles/s41467-026-78923-w)**, by Changyue Zhao and Zhicheng Ji, was published in _Nature Communications_ on November 3, 2026. [Read the article](https://doi.org/10.1038/s41467-026-78923-w).
+Our paper, **[Visual LLM-guided consensus spatial domain detection with L-STAR](https://www.nature.com/articles/s41467-026-78923-w)**, by Changyue Zhao and Zhicheng Ji, was published in _Nature Communications_ on November 3, 2026.
