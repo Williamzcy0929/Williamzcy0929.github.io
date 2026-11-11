@@ -12,7 +12,10 @@ nav_order: 2
 {% for entry in site.data.cv.cv.publications %}
   {% assign project = site.data.projects | where: 'slug', entry.slug | first %}
   <article class="publication-item">
-    <div class="publication-meta"><span class="publication-badge">{% if entry.publisher %}Published{% else %}In preparation{% endif %}</span></div>
+    <div class="publication-meta">
+      {% if entry.preview %}<a class="publication-preview" href="{{ entry.preview | relative_url }}" target="_blank" rel="noopener" aria-label="View full-size {{ entry.title }} workflow figure"><img src="{{ entry.preview | relative_url }}" width="8000" height="4500" alt="{{ entry.preview_alt }}" decoding="async"></a>{% endif %}
+      <span class="publication-badge">{% if entry.publisher %}Published{% else %}In preparation{% endif %}</span>
+    </div>
     <div class="publication-body">
       <h2>{{ entry.title }}</h2>
       <p class="publication-authors">{% for author in entry.author_names %}{% if forloop.first != true %}{% if forloop.last %} and {% else %}, {% endif %}{% endif %}{% if author == "Changyue Zhao" %}<u>{{ author }}</u>{% else %}{{ author }}{% endif %}{% endfor %}</p>

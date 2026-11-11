@@ -219,9 +219,26 @@ a.primary-link:hover {
 .publication-catalog {
   margin-top: 2.5rem;
 }
+.teaching-summary section + section {
+  margin-top: 2rem;
+}
+.teaching-summary h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.teaching-summary ul {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+.teaching-summary li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
 .publication-item {
   display: grid;
-  grid-template-columns: 11.5rem minmax(0, 1fr) auto;
+  grid-template-columns: 9rem minmax(0, 1fr) auto;
   gap: 1.2rem;
   padding: 1.8rem 0;
   border-top: 1px solid var(--global-divider-color, #dfe6e4);
@@ -236,12 +253,33 @@ a.primary-link:hover {
   font-weight: 600;
   line-height: 1.5;
 }
+.publication-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-width: 0;
+}
+.publication-preview {
+  display: block;
+  width: 100%;
+  max-width: 9rem;
+  border: 1px solid var(--global-divider-color, #dfe6e4);
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+}
+.publication-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .publication-body {
   min-width: 0;
 }
 .publication-body h2 {
   margin: 0 0 0.55rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
 }

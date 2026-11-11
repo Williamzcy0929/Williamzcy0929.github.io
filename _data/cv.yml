@@ -300,6 +300,9 @@ cv:
       author_names:
         - Changyue Zhao
         - Zhicheng Ji
+      preview: "/assets/img/publication_preview/l-star-workflow.png"
+      preview_alt: "L-STAR workflow: LLM visual comparison, method selection, and consensus
+        clustering."
     - slug: trace
       title: "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
       authors: Zhao, C., and Ji, Z.
