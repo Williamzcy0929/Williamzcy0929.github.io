@@ -8,15 +8,12 @@ nav_order: 2
 
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
 
-{% for entry in site.data.cv.cv.teaching %}
+## Teaching Assistant at Duke University
 
-<section class="cv-entry">
-  <h2>{{ entry.title }}</h2>
-  <p class="research-meta">{{ entry.period }} · {{ entry.institution }}</p>
-  <ul>{% for item in entry.highlights %}<li>{{ item }}</li>{% endfor %}</ul>
-  <p><strong>Supervision:</strong> {{ entry.supervisor }}</p>
-  {% if entry.url %}<p><a href="{{ entry.url }}">View STAT 3011 slides and code</a></p>{% endif %}
-</section>
-{% endfor %}
+- BIOSTAT 830 (Fall 2026)
+
+## Undergraduate Teaching Assistant at University of Minnesota, Twin Cities
+
+- [STAT 3011](https://github.com/Williamzcy0929/STAT-3011-25Spring) (Fall 2024, Spring 2025)
 
 <script src="{{ '/assets/js/typography.js' | relative_url }}" defer></script>
