@@ -16,9 +16,9 @@ permalink: "/"
     <div class="intro-links">
       <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>
       <a href="mailto:changyue.zhao@duke.edu,williamzcy929@gmail.com">Email</a>
-      <a href="https://github.com/Williamzcy0929"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
-      <a href="https://scholar.google.com/citations?user=qmnDUYcAAAAJ&amp;hl=en">Google Scholar</a>
-      <a href="https://www.linkedin.com/in/changyue-william-zhao/">LinkedIn</a>
+      <a class="social-link" href="https://github.com/Williamzcy0929"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="social-link" href="https://scholar.google.com/citations?user=qmnDUYcAAAAJ&amp;hl=en"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+      <a class="social-link" href="https://www.linkedin.com/in/changyue-william-zhao/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
     </div>
     </div>
     <img class="intro-portrait" src="{{ '/assets/img/william-commencement.jpg' | relative_url }}" width="1800" height="1200" alt="William tossing his graduation cap at commencement" fetchpriority="high" decoding="async">
