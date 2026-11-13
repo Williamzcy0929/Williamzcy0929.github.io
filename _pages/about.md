@@ -16,7 +16,7 @@ permalink: "/"
     <div class="intro-links">
       <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>
       <a href="mailto:changyue.zhao@duke.edu,williamzcy929@gmail.com">Email</a>
-      <a href="https://github.com/Williamzcy0929">GitHub</a>
+      <a href="https://github.com/Williamzcy0929"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
       <a href="https://scholar.google.com/citations?user=qmnDUYcAAAAJ&amp;hl=en">Google Scholar</a>
       <a href="https://www.linkedin.com/in/changyue-william-zhao/">LinkedIn</a>
     </div>

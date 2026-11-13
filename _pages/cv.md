@@ -34,7 +34,6 @@ nav_order: 3
   <h3>{% if project.deliverable_url %}<a href="{{ project.deliverable_url }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</h3>
   <p class="research-meta">{{ entry.period }}{% if entry.institution %} · {{ entry.institution }}{% endif %}</p>
   {% if entry.status %}<p class="research-status">{{ entry.status }}</p>{% endif %}
-  <p>{{ entry.summary }}</p>
   <ul>{% for item in entry.highlights %}<li>{{ item }}</li>{% endfor %}</ul>
   {% if entry.supervisor %}<p><strong>Supervision:</strong> {{ entry.supervisor }}</p>{% endif %}
   {% if entry.url %}<p><a href="{{ entry.url }}">GitHub</a>{% if entry.huggingface %} · <a href="{{ entry.huggingface }}">Hugging Face</a>{% endif %}</p>{% endif %}

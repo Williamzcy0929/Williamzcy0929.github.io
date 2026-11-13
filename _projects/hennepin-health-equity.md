@@ -19,8 +19,8 @@ I investigated inequities in mental-health resource access and developed a predi
 
 ## My Contributions
 
-- Investigated inequities in access to mental-health resources using Hennepin County questionnaire data. Applied multiple regression, ridge regression, decision trees, and causal inference methods.
-- Developed a tkinter interface for mental-health prediction using AdaBoost in scikit-learn.
+- Analyzed inequities in access to mental-health resources using Hennepin County questionnaire data, applying multiple regression, ridge regression, decision trees, and causal inference methods.
+- Developed a `tkinter` interface for mental-health prediction using AdaBoost in scikit-learn.
 - Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division.
 
 **Supervision:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.

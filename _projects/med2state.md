@@ -19,9 +19,9 @@ I develop Med2State, a Python/PyTorch deep learning model for structured patient
 
 ## My Contributions
 
-- Develop Med2State, a deep learning model in Python and PyTorch that learns structured patient-state representations from incomplete multimodal records and longitudinal clinical history, with separate disease, procedure, and treatment channels.
-- Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention, low-rank fusion, and temporal models for irregular visits.
-- Develop learning objectives and clinical concept readouts for incomplete longitudinal records.
+- Develop Med2State, a Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records, with separate disease, procedure, and treatment channels.
+- Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention and low-rank fusion to integrate available evidence.
+- Explore temporal models for irregular visits and develop learning objectives and clinical concept readouts for longitudinal patient-state representations.
 
 **Supervision:** Prof. Anru Zhang, Duke University.
 

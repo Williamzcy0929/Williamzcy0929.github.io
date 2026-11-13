@@ -12,13 +12,13 @@
     },
     "profiles": [
       {
+        "network": "Personal Website",
+        "url": "https://williamzcy0929.github.io/"
+      },
+      {
         "network": "GitHub",
         "username": "Williamzcy0929",
         "url": "https://github.com/Williamzcy0929"
-      },
-      {
-        "network": "Personal Website",
-        "url": "https://williamzcy0929.github.io/"
       },
       {
         "network": "Google Scholar",
@@ -66,17 +66,16 @@
   ],
   "projects": [
     {
-      "name": "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)",
+      "name": "TRACE: Trajectory Inference via AI-guided Cross-view Evidence",
       "description": "I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/LangGraph package for scRNA-seq, scATAC-seq, and spatial transcriptomics analysis.",
       "startDate": "2026-01",
       "highlights": [
-        "Develop TRACE, an LLM-guided trajectory inference agent that achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets while automatically identifying root states from molecular evidence.",
-        "Build trace, an end-to-end Python package using LangGraph to coordinate R/Seurat analysis and LLM reasoning. Use Seurat for normalization, dimensionality reduction, clustering, and marker-gene analysis, and Signac for scATAC-seq preprocessing and gene-activity estimation.",
-        "Design structured prompts and targeted molecular-evidence queries to integrate UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root identification.",
-        "Develop spatial trajectory inference combining molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Implement graph-based pseudotime estimation with local root cells, retaining ambiguous assignments and partially resolved trajectories.",
-        "Design pPOS to jointly evaluate lineage membership and within-lineage ordering. Implement blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.",
-        "Investigate discrepancies in dyneval-based F1branches evaluation. Reimplement the metric according to its published definition over the full cell set, with diagnostics for cell coverage and branch recovery.",
-        "Implement comparative evaluation of TRACE, Monocle 3, Slingshot, and TSCAN using branch membership and within-lineage pseudotime ordering."
+        "Develop TRACE, an LLM-guided trajectory inference agent that automatically identifies root states and achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets.",
+        "Build trace, an end-to-end Python package using LangGraph to coordinate LLM reasoning with R analysis. Integrate Seurat preprocessing, dimensionality reduction, clustering, and marker analysis with Signac gene-activity estimation.",
+        "Design structured prompts and targeted molecular-evidence queries to reconcile UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root-state selection.",
+        "Develop spatial pseudotime inference using molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Estimate pseudotime from local root cells while retaining ambiguous assignments and partially resolved trajectories.",
+        "Design pPOS to jointly evaluate lineage membership and within-lineage ordering, using blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.",
+        "Benchmark TRACE against Monocle 3, Slingshot, and TSCAN. Investigate discrepancies in dyneval-based F1branches evaluation and reimplement the published definition over the full cell set, with diagnostics for cell coverage and branch recovery."
       ],
       "status": "Manuscript in preparation"
     },
@@ -85,22 +84,22 @@
       "description": "I develop Med2State, a Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records and longitudinal clinical history.",
       "startDate": "2025-11",
       "highlights": [
-        "Develop Med2State, a deep learning model in Python and PyTorch that learns structured patient-state representations from incomplete multimodal records and longitudinal clinical history, with separate disease, procedure, and treatment channels.",
-        "Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention, low-rank fusion, and temporal models for irregular visits.",
-        "Develop learning objectives and clinical concept readouts for incomplete longitudinal records."
+        "Develop Med2State, a Python/PyTorch deep learning model for structured patient-state representations from incomplete multimodal records, with separate disease, procedure, and treatment channels.",
+        "Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention and low-rank fusion to integrate available evidence.",
+        "Explore temporal models for irregular visits and develop learning objectives and clinical concept readouts for longitudinal patient-state representations."
       ],
       "status": "Ongoing methodological research"
     },
     {
-      "name": "Visual LLM-Guided Spatial Domain Detection (L-STAR)",
-      "description": "I developed L-STAR, combining Python LLM workflows for spatial-domain method selection with consensus clustering in R and spatial expression analysis using Seurat and SpatialExperiment.",
+      "name": "L-STAR: Visual LLM-Guided Spatial Domain Detection",
+      "description": "I developed L-STAR and its Python package lstar for visual LLM-guided method selection, consensus spatial domain detection, and marker-guided domain annotation.",
       "startDate": "2025-09",
       "highlights": [
-        "Developed L-STAR, an LLM-guided spatial domain detection framework that achieved the highest average normalized ARI across evaluation datasets, outperforming individual methods and fixed-method consensus.",
-        "Designed structured prompts and implemented Python workflows to compare candidate domain maps using tissue context and optional histology.",
-        "Implemented repeated pairwise comparisons and win-rate ranking for method selection. Combined selected domain assignments through co-assignment matrices and consensus clustering in R.",
-        "Processed spatial expression data with Seurat and SpatialExperiment and built marker-guided domain annotation. Distinguished tissue regions from cell types by sampling level, retaining Unknown for insufficient evidence. Evaluated agreement using BioLORD-2023 embeddings and within-dataset permutation tests.",
-        "Benchmarked L-STAR across six spatial transcriptomics datasets against individual methods and fixed-method consensus. Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified selected-method redundancy."
+        "Developed L-STAR, a visual LLM-guided spatial domain detection framework that achieved the highest average normalized ARI across six spatial transcriptomics datasets, outperforming individual methods and fixed-method consensus.",
+        "Built lstar, a Python package integrating spatial map visualization, LLM-guided method selection, consensus clustering, and biological domain annotation with Scanpy-based marker analysis.",
+        "Designed structured prompts for repeated pairwise comparison of domain maps using tissue context and optional histology. Implemented win-rate ranking and consensus clustering in R using co-assignment matrices.",
+        "Processed study datasets with Seurat and SpatialExperiment and developed marker-guided domain annotation, distinguishing tissue regions from cell types by sampling level and retaining Unknown for insufficient evidence. Evaluated annotation agreement using BioLORD-2023 embeddings and within-dataset permutation tests.",
+        "Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified redundancy among selected methods."
       ],
       "endDate": "2026-10",
       "status": "Published in Nature Communications (2026)",
@@ -111,11 +110,11 @@
       "description": "I built OpenReview data pipelines, fine-tuned acceptance-prediction and response-grading models, and used the fine-tuned grader to evaluate generated author responses.",
       "startDate": "2025-03",
       "highlights": [
-        "Built resumable OpenReview pipelines using Selenium and asynchronous requests, with structured JSON storage for papers, reviews, scores, and responses. Extracted author contact information from PDFs with PyMuPDF to enrich submission metadata.",
-        "Prepared training data and fine-tuned GPT-4o for paper acceptance prediction. Evaluated predictions using progressively richer inputs comprising paper metadata, reviewer scores, and review text.",
+        "Built resumable OpenReview pipelines with Selenium, asynchronous requests, and structured JSON storage for papers, reviews, scores, and responses. Enriched submission metadata by extracting author contact information from PDFs with PyMuPDF.",
+        "Fine-tuned GPT-4o for paper acceptance prediction and evaluated performance with progressively richer inputs, from paper metadata to reviewer scores and review text.",
         "Developed LLM-based agents to assess figures and tables in the context of full manuscripts and suggest improvements to clarity, readability, and presentation.",
-        "Fine-tuned GPT-4o mini as an LLM-based grader to score and compare author responses. Constructed proxy scoring targets from acceptance levels using bounded Gaussian noise.",
-        "Trained a reply-generation model and used the fine-tuned grader to compare generated responses with author replies from accepted and rejected submissions."
+        "Fine-tuned GPT-4o mini as a grader for author responses, constructing proxy scoring targets from acceptance levels with bounded Gaussian noise.",
+        "Trained a reply-generation model and evaluated its responses against author replies from accepted and rejected submissions using the fine-tuned grader."
       ],
       "endDate": "2025-09",
       "url": "https://github.com/Williamzcy0929/PaperEval"
@@ -138,7 +137,7 @@
       "description": "I investigated inequities in mental-health resource access and developed a prediction interface using Hennepin County questionnaire data.",
       "startDate": "2024-10",
       "highlights": [
-        "Investigated inequities in access to mental-health resources using Hennepin County questionnaire data. Applied multiple regression, ridge regression, decision trees, and causal inference methods.",
+        "Analyzed inequities in access to mental-health resources using Hennepin County questionnaire data, applying multiple regression, ridge regression, decision trees, and causal inference methods.",
         "Developed a tkinter interface for mental-health prediction using AdaBoost in scikit-learn.",
         "Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division."
       ],
@@ -151,7 +150,7 @@
       "startDate": "2024-09",
       "highlights": [
         "Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in the R package VennLasso under matched problem sizes and convergence tolerances.",
-        "Designed a simulation study with 1,000 large sparse-matrix datasets and overlapping groups. Compared implementation runtimes using t-tests.",
+        "Designed a simulation study of 1,000 large sparse-matrix datasets with overlapping groups and used t-tests to compare implementation runtimes.",
         "Implemented the optimized overlapping-group LASSO algorithm in C for integration with R."
       ],
       "endDate": "2025-05"
@@ -168,7 +167,7 @@
     },
     {
       "name": "Bioinformatics",
-      "keywords": ["Seurat", "Signac", "Scanpy", "scDesign3", "Monocle 3", "Slingshot", "TSCAN"]
+      "keywords": ["Seurat", "Signac", "Scanpy", "scDesign3"]
     },
     {
       "name": "Tools",
@@ -181,7 +180,7 @@
       "position": "Teaching Assistant: BIOSTAT 830",
       "startDate": "2026-08",
       "highlights": [
-        "Help develop and refine BIOSTAT 830, a new course first offered in Fall 2026 to bridge undergraduate statistical theory and PhD-level inference. Quickly adapt lecture materials and proof-based assignment solutions while building course resources from the ground up.",
+        "Help build BIOSTAT 830 resources from the ground up and quickly adapt lecture materials for its first offering in Fall 2026, bridging undergraduate statistical theory and PhD-level inference.",
         "Hold weekly office hours and grade assignments for a class of 22 students in statistical inference, asymptotic theory, and decision theory. Discuss common errors with the instructor to guide future lectures.",
         "Prepare and verify proof-based LaTeX solutions, format and proofread slides, and manage materials in Canvas. Standardize notation and convert formulas into editable PowerPoint equations."
       ]

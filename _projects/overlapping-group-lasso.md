@@ -16,8 +16,8 @@ I compared overlapping group LASSO implementations through a simulation study an
 
 ## My Contributions
 
-- Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in the R package VennLasso under matched problem sizes and convergence tolerances.
-- Designed a simulation study with 1,000 large sparse-matrix datasets and overlapping groups. Compared implementation runtimes using t-tests.
+- Compared `overlapping_LeastR` from the MATLAB SLEP library with `oglasso` in the R package VennLasso under matched problem sizes and convergence tolerances.
+- Designed a simulation study of 1,000 large sparse-matrix datasets with overlapping groups and used t-tests to compare implementation runtimes.
 - Implemented the optimized overlapping-group LASSO algorithm in C for integration with R.
 
 **Supervision:** Prof. Tianxi Li, University of Minnesota.

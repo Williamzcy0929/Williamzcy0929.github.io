@@ -5,10 +5,10 @@ cv:
   email: changyue.zhao@duke.edu
   location: Durham, NC
   social_networks:
-    - network: GitHub
-      username: Williamzcy0929
     - network: Personal Website
       url: https://williamzcy0929.github.io/
+    - network: GitHub
+      username: Williamzcy0929
     - network: Google Scholar
       url: https://scholar.google.com/citations?user=qmnDUYcAAAAJ&hl=en
   summary: Master of Biostatistics student at Duke University developing foundation-model
@@ -58,7 +58,7 @@ cv:
         - Received the SDUFE First-Prize Scholarship in 2022 and 2023.
   research:
     - slug: trace
-      title: Trajectory Inference via AI-guided Cross-view Evidence (TRACE)
+      title: "TRACE: Trajectory Inference via AI-guided Cross-view Evidence"
       description: LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial
         transcriptomics with Python, LangGraph, R/Seurat, and Signac.
       category: Biomedical AI
@@ -71,29 +71,25 @@ cv:
         Python/LangGraph package for scRNA-seq, scATAC-seq, and spatial transcriptomics
         analysis.
       highlights:
-        - Develop TRACE, an LLM-guided trajectory inference agent that achieves high agreement
-          with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial
-          transcriptomics datasets while automatically identifying root states from molecular
-          evidence.
-        - Build trace, an end-to-end Python package using LangGraph to coordinate R/Seurat
-          analysis and LLM reasoning. Use Seurat for normalization, dimensionality reduction,
-          clustering, and marker-gene analysis, and Signac for scATAC-seq preprocessing
-          and gene-activity estimation.
-        - Design structured prompts and targeted molecular-evidence queries to integrate
-          UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root
-          identification.
-        - Develop spatial trajectory inference combining molecular evidence and spatial
-          neighborhood graphs to distinguish repeated local processes. Implement graph-based
-          pseudotime estimation with local root cells, retaining ambiguous assignments
-          and partially resolved trajectories.
-        - Design pPOS to jointly evaluate lineage membership and within-lineage ordering.
-          Implement blockwise pair counting and inclusion-exclusion to avoid double-counting
+        - Develop TRACE, an LLM-guided trajectory inference agent that automatically identifies
+          root states and achieves high agreement with reference trajectories across evaluated
+          scRNA-seq, scATAC-seq, and spatial transcriptomics datasets.
+        - Build <code>trace</code>, an end-to-end Python package using LangGraph to coordinate
+          LLM reasoning with R analysis. Integrate Seurat preprocessing, dimensionality
+          reduction, clustering, and marker analysis with Signac gene-activity estimation.
+        - Design structured prompts and targeted molecular-evidence queries to reconcile
+          UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root-state
+          selection.
+        - Develop spatial pseudotime inference using molecular evidence and spatial neighborhood
+          graphs to distinguish repeated local processes. Estimate pseudotime from local
+          root cells while retaining ambiguous assignments and partially resolved trajectories.
+        - Design <code>pPOS</code> to jointly evaluate lineage membership and within-lineage
+          ordering, using blockwise pair counting and inclusion-exclusion to avoid double-counting
           cell pairs shared across branches.
-        - Investigate discrepancies in dyneval-based F1branches evaluation. Reimplement
-          the metric according to its published definition over the full cell set, with
-          diagnostics for cell coverage and branch recovery.
-        - Implement comparative evaluation of TRACE, Monocle 3, Slingshot, and TSCAN using
-          branch membership and within-lineage pseudotime ordering.
+        - Benchmark TRACE against Monocle 3, Slingshot, and TSCAN. Investigate discrepancies
+          in <code>dyneval</code>-based <code>F1branches</code> evaluation and reimplement
+          the published definition over the full cell set, with diagnostics for cell coverage
+          and branch recovery.
       publication_title: "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
       supervisor: Prof. Zhicheng Ji, Duke University
       institution: Department of Biostatistics and Bioinformatics, Duke University
@@ -114,18 +110,18 @@ cv:
         patient-state representations from incomplete multimodal records and longitudinal
         clinical history.
       highlights:
-        - Develop Med2State, a deep learning model in Python and PyTorch that learns structured
-          patient-state representations from incomplete multimodal records and longitudinal
-          clinical history, with separate disease, procedure, and treatment channels.
+        - Develop Med2State, a Python/PyTorch deep learning model for structured patient-state
+          representations from incomplete multimodal records, with separate disease, procedure,
+          and treatment channels.
         - Build modular encoders for demographics, measurements, structured EHR events,
-          text, and images. Explore semantic cross-attention, low-rank fusion, and temporal
-          models for irregular visits.
-        - Develop learning objectives and clinical concept readouts for incomplete longitudinal
-          records.
+          text, and images. Explore semantic cross-attention and low-rank fusion to integrate
+          available evidence.
+        - Explore temporal models for irregular visits and develop learning objectives
+          and clinical concept readouts for longitudinal patient-state representations.
     - slug: l-star
-      title: Visual LLM-Guided Spatial Domain Detection (L-STAR)
-      description: Visual LLM-guided consensus spatial domain detection with Python
-        LLM workflows and consensus clustering in R.
+      title: "L-STAR: Visual LLM-Guided Spatial Domain Detection"
+      description: Visual LLM-guided consensus spatial domain detection and the lstar
+        Python package for method selection, consensus clustering, and domain annotation.
       category: Biomedical AI
       period: September 2025 – October 2026
       start: 2025-09
@@ -135,26 +131,26 @@ cv:
       institution: Department of Biostatistics and Bioinformatics, Duke University
       url: https://github.com/Williamzcy0929/L-STAR
       featured: true
-      summary: I developed L-STAR, combining Python LLM workflows for spatial-domain
-        method selection with consensus clustering in R and spatial expression analysis
-        using Seurat and SpatialExperiment.
+      summary: I developed L-STAR and its Python package lstar for visual LLM-guided
+        method selection, consensus spatial domain detection, and marker-guided domain
+        annotation.
       highlights:
-        - Developed L-STAR, an LLM-guided spatial domain detection framework that achieved
-          the highest average normalized ARI across evaluation datasets, outperforming
-          individual methods and fixed-method consensus.
-        - Designed structured prompts and implemented Python workflows to compare candidate
-          domain maps using tissue context and optional histology.
-        - Implemented repeated pairwise comparisons and win-rate ranking for method selection.
-          Combined selected domain assignments through co-assignment matrices and consensus
-          clustering in R.
-        - Processed spatial expression data with Seurat and SpatialExperiment and built
-          marker-guided domain annotation. Distinguished tissue regions from cell types
-          by sampling level, retaining Unknown for insufficient evidence. Evaluated agreement
-          using BioLORD-2023 embeddings and within-dataset permutation tests.
-        - Benchmarked L-STAR across six spatial transcriptomics datasets against individual
-          methods and fixed-method consensus. Assessed sensitivity to ensemble size, LLM
-          choice, color palettes, and presentation order, and quantified selected-method
-          redundancy.
+        - Developed L-STAR, a visual LLM-guided spatial domain detection framework that
+          achieved the highest average normalized ARI across six spatial transcriptomics
+          datasets, outperforming individual methods and fixed-method consensus.
+        - Built <code>lstar</code>, a Python package integrating spatial map visualization,
+          LLM-guided method selection, consensus clustering, and biological domain annotation
+          with Scanpy-based marker analysis.
+        - Designed structured prompts for repeated pairwise comparison of domain maps
+          using tissue context and optional histology. Implemented win-rate ranking and
+          consensus clustering in R using co-assignment matrices.
+        - Processed study datasets with Seurat and SpatialExperiment and developed marker-guided
+          domain annotation, distinguishing tissue regions from cell types by sampling
+          level and retaining <code>Unknown</code> for insufficient evidence. Evaluated
+          annotation agreement using BioLORD-2023 embeddings and within-dataset permutation
+          tests.
+        - Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation
+          order, and quantified redundancy among selected methods.
     - slug: papereval
       title: PaperEval
       description: OpenReview pipelines, manuscript-assessment agents, and fine-tuned
@@ -170,19 +166,19 @@ cv:
         response-grading models, and used the fine-tuned grader to evaluate generated
         author responses.
       highlights:
-        - Built resumable OpenReview pipelines using Selenium and asynchronous requests,
-          with structured JSON storage for papers, reviews, scores, and responses. Extracted
-          author contact information from PDFs with PyMuPDF to enrich submission metadata.
-        - Prepared training data and fine-tuned GPT-4o for paper acceptance prediction.
-          Evaluated predictions using progressively richer inputs comprising paper metadata,
-          reviewer scores, and review text.
+        - Built resumable OpenReview pipelines with Selenium, asynchronous requests, and
+          structured JSON storage for papers, reviews, scores, and responses. Enriched
+          submission metadata by extracting author contact information from PDFs with
+          PyMuPDF.
+        - Fine-tuned GPT-4o for paper acceptance prediction and evaluated performance
+          with progressively richer inputs, from paper metadata to reviewer scores and
+          review text.
         - Developed LLM-based agents to assess figures and tables in the context of full
           manuscripts and suggest improvements to clarity, readability, and presentation.
-        - Fine-tuned GPT-4o mini as an LLM-based grader to score and compare author responses.
-          Constructed proxy scoring targets from acceptance levels using bounded Gaussian
-          noise.
-        - Trained a reply-generation model and used the fine-tuned grader to compare generated
-          responses with author replies from accepted and rejected submissions.
+        - Fine-tuned GPT-4o mini as a grader for author responses, constructing proxy
+          scoring targets from acceptance levels with bounded Gaussian noise.
+        - Trained a reply-generation model and evaluated its responses against author
+          replies from accepted and rejected submissions using the fine-tuned grader.
     - slug: mudac-2025
       title: MUDAC (Midwest Undergraduate Data Analysis Competition) 2025
       description: Mentoring-match prediction with feature engineering, survival analysis,
@@ -206,8 +202,8 @@ cv:
         - Designed a mixture-of-experts model with regression, MLP, and Transformer experts
           for different feature types and a learned gating network. Compared it with random
           forest and XGBoost baselines.
-        - Placed 7th in Innovation & Creativity among approximately 200 undergraduate teams at MUDAC
-          2025.
+        - Placed 7th in Innovation &amp; Creativity among approximately 200 undergraduate
+          teams at MUDAC 2025.
     - slug: hennepin-health-equity
       title: UMN & Hennepin County Public Health Equity Data Challenge
       description: Mental-health resource access in Hennepin County.
@@ -221,11 +217,11 @@ cv:
       summary: I investigated inequities in mental-health resource access and developed
         a prediction interface using Hennepin County questionnaire data.
       highlights:
-        - Investigated inequities in access to mental-health resources using Hennepin
-          County questionnaire data. Applied multiple regression, ridge regression, decision
+        - Analyzed inequities in access to mental-health resources using Hennepin County
+          questionnaire data, applying multiple regression, ridge regression, decision
           trees, and causal inference methods.
-        - Developed a tkinter interface for mental-health prediction using AdaBoost in
-          scikit-learn.
+        - Developed a <code>tkinter</code> interface for mental-health prediction using
+          AdaBoost in scikit-learn.
         - Co-authored the analysis report and poster and placed in the top 25% of the
           undergraduate division.
     - slug: overlapping-group-lasso
@@ -240,10 +236,10 @@ cv:
       summary: I compared overlapping group LASSO implementations through a simulation
         study and implemented the optimized algorithm in C for R integration.
       highlights:
-        - Compared overlapping_LeastR from the MATLAB SLEP library with oglasso in the
-          R package VennLasso under matched problem sizes and convergence tolerances.
-        - Designed a simulation study with 1,000 large sparse-matrix datasets and overlapping
-          groups. Compared implementation runtimes using t-tests.
+        - Compared <code>overlapping_LeastR</code> from the MATLAB SLEP library with <code>oglasso</code>
+          in the R package VennLasso under matched problem sizes and convergence tolerances.
+        - Designed a simulation study of 1,000 large sparse-matrix datasets with overlapping
+          groups and used t-tests to compare implementation runtimes.
         - Implemented the optimized overlapping-group LASSO algorithm in C for integration
           with R.
   teaching:
@@ -251,10 +247,9 @@ cv:
       institution: Department of Biostatistics and Bioinformatics, Duke University
       period: August 2026 – present
       highlights:
-        - Help develop and refine BIOSTAT 830, a new course first offered in Fall 2026
-          to bridge undergraduate statistical theory and PhD-level inference. Quickly
-          adapt lecture materials and proof-based assignment solutions while building
-          course resources from the ground up.
+        - Help build BIOSTAT 830 resources from the ground up and quickly adapt lecture
+          materials for its first offering in Fall 2026, bridging undergraduate statistical
+          theory and PhD-level inference.
         - Hold weekly office hours and grade assignments for a class of 22 students in
           statistical inference, asymptotic theory, and decision theory. Discuss common
           errors with the instructor to guide future lectures.
@@ -280,7 +275,7 @@ cv:
   skills:
     Programming: Python, R, C/C++, Java, OCaml, Swift, MATLAB, SQL
     Machine Learning: PyTorch, TensorFlow, scikit-learn, Hugging Face, NumPy, pandas
-    Bioinformatics: Seurat, Signac, Scanpy, scDesign3, Monocle 3, Slingshot, TSCAN
+    Bioinformatics: Seurat, Signac, Scanpy, scDesign3
     Tools: Git, SQLite, Selenium, LangGraph, LaTeX, Markdown, SPSS
     Hobbies: Photography, Snowboarding, Car Racing, Cycling, Fitness Exercise
   research_interests:

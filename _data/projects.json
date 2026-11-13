@@ -1,6 +1,6 @@
 [
   {
-    "title": "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)",
+    "title": "TRACE: Trajectory Inference via AI-guided Cross-view Evidence",
     "description": "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac.",
     "category": "Biomedical AI",
     "importance": 1,
@@ -21,9 +21,9 @@
     "slug": "med2state"
   },
   {
-    "title": "Visual LLM-Guided Spatial Domain Detection (L-STAR)",
+    "title": "L-STAR: Visual LLM-Guided Spatial Domain Detection",
     "deliverable_url": "https://www.nature.com/articles/s41467-026-78923-w",
-    "description": "Visual LLM-guided consensus spatial domain detection with Python LLM workflows and consensus clustering in R.",
+    "description": "Visual LLM-guided consensus spatial domain detection and the lstar Python package for method selection, consensus clustering, and domain annotation.",
     "category": "Biomedical AI",
     "importance": 3,
     "featured": true,

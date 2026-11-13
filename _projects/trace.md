@@ -1,5 +1,5 @@
 ---
-title: "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)"
+title: "TRACE: Trajectory Inference via AI-guided Cross-view Evidence"
 description: "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac."
 category: "Biomedical AI"
 importance: 1
@@ -19,13 +19,12 @@ I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/
 
 ## My Contributions
 
-- Develop TRACE, an LLM-guided trajectory inference agent that achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets while automatically identifying root states from molecular evidence.
-- Build trace, an end-to-end Python package using LangGraph to coordinate R/Seurat analysis and LLM reasoning. Use Seurat for normalization, dimensionality reduction, clustering, and marker-gene analysis, and Signac for scATAC-seq preprocessing and gene-activity estimation.
-- Design structured prompts and targeted molecular-evidence queries to integrate UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root identification.
-- Develop spatial trajectory inference combining molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Implement graph-based pseudotime estimation with local root cells, retaining ambiguous assignments and partially resolved trajectories.
-- Design pPOS to jointly evaluate lineage membership and within-lineage ordering. Implement blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.
-- Investigate discrepancies in dyneval-based F1branches evaluation. Reimplement the metric according to its published definition over the full cell set, with diagnostics for cell coverage and branch recovery.
-- Implement comparative evaluation of TRACE, Monocle 3, Slingshot, and TSCAN using branch membership and within-lineage pseudotime ordering.
+- Develop TRACE, an LLM-guided trajectory inference agent that automatically identifies root states and achieves high agreement with reference trajectories across evaluated scRNA-seq, scATAC-seq, and spatial transcriptomics datasets.
+- Build `trace`, an end-to-end Python package using LangGraph to coordinate LLM reasoning with R analysis. Integrate Seurat preprocessing, dimensionality reduction, clustering, and marker analysis with Signac gene-activity estimation.
+- Design structured prompts and targeted molecular-evidence queries to reconcile UMAP and t-SNE views for cell-type annotation, lineage reconstruction, and root-state selection.
+- Develop spatial pseudotime inference using molecular evidence and spatial neighborhood graphs to distinguish repeated local processes. Estimate pseudotime from local root cells while retaining ambiguous assignments and partially resolved trajectories.
+- Design `pPOS` to jointly evaluate lineage membership and within-lineage ordering, using blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.
+- Benchmark TRACE against Monocle 3, Slingshot, and TSCAN. Investigate discrepancies in `dyneval`-based `F1branches` evaluation and reimplement the published definition over the full cell set, with diagnostics for cell coverage and branch recovery.
 
 **Supervision:** Prof. Zhicheng Ji, Duke University.
 

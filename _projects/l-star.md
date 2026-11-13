@@ -1,6 +1,6 @@
 ---
-title: "Visual LLM-Guided Spatial Domain Detection (L-STAR)"
-description: "Visual LLM-guided consensus spatial domain detection with Python LLM workflows and consensus clustering in R."
+title: "L-STAR: Visual LLM-Guided Spatial Domain Detection"
+description: "Visual LLM-guided consensus spatial domain detection and the lstar Python package for method selection, consensus clustering, and domain annotation."
 category: "Biomedical AI"
 importance: 3
 featured: true
@@ -18,15 +18,15 @@ Zhao, C., and Ji, Z. (2026). Visual LLM-guided consensus spatial domain detectio
 
 _Published in Nature Communications (2026)._
 
-I developed L-STAR, combining Python LLM workflows for spatial-domain method selection with consensus clustering in R and spatial expression analysis using Seurat and SpatialExperiment.
+I developed L-STAR and its Python package `lstar` for visual LLM-guided method selection, consensus spatial domain detection, and marker-guided domain annotation.
 
 ## My Contributions
 
-- Developed L-STAR, an LLM-guided spatial domain detection framework that achieved the highest average normalized ARI across evaluation datasets, outperforming individual methods and fixed-method consensus.
-- Designed structured prompts and implemented Python workflows to compare candidate domain maps using tissue context and optional histology.
-- Implemented repeated pairwise comparisons and win-rate ranking for method selection. Combined selected domain assignments through co-assignment matrices and consensus clustering in R.
-- Processed spatial expression data with Seurat and SpatialExperiment and built marker-guided domain annotation. Distinguished tissue regions from cell types by sampling level, retaining Unknown for insufficient evidence. Evaluated agreement using BioLORD-2023 embeddings and within-dataset permutation tests.
-- Benchmarked L-STAR across six spatial transcriptomics datasets against individual methods and fixed-method consensus. Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified selected-method redundancy.
+- Developed L-STAR, a visual LLM-guided spatial domain detection framework that achieved the highest average normalized ARI across six spatial transcriptomics datasets, outperforming individual methods and fixed-method consensus.
+- Built `lstar`, a Python package integrating spatial map visualization, LLM-guided method selection, consensus clustering, and biological domain annotation with Scanpy-based marker analysis.
+- Designed structured prompts for repeated pairwise comparison of domain maps using tissue context and optional histology. Implemented win-rate ranking and consensus clustering in R using co-assignment matrices.
+- Processed study datasets with Seurat and SpatialExperiment and developed marker-guided domain annotation, distinguishing tissue regions from cell types by sampling level and retaining `Unknown` for insufficient evidence. Evaluated annotation agreement using BioLORD-2023 embeddings and within-dataset permutation tests.
+- Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified redundancy among selected methods.
 
 **Supervision:** Prof. Zhicheng Ji, Duke University.
 
