@@ -1,5 +1,5 @@
 ---
-title: "TRACE"
+title: "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)"
 description: "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac."
 category: "Biomedical AI"
 importance: 1
@@ -12,8 +12,6 @@ status: "Manuscript in preparation"
 <link rel="stylesheet" href="{{ '/assets/css/william.css' | relative_url }}">
 
 **January 2026 – present · Department of Biostatistics and Bioinformatics, Duke University**
-
-Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence. Manuscript in preparation.
 
 _Manuscript in preparation._
 

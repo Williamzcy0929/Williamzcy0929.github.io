@@ -1,6 +1,6 @@
 [
   {
-    "title": "TRACE",
+    "title": "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)",
     "description": "LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial transcriptomics with Python, LangGraph, R/Seurat, and Signac.",
     "category": "Biomedical AI",
     "importance": 1,
@@ -21,7 +21,7 @@
     "slug": "med2state"
   },
   {
-    "title": "L-STAR",
+    "title": "Visual LLM-Guided Spatial Domain Detection (L-STAR)",
     "deliverable_url": "https://www.nature.com/articles/s41467-026-78923-w",
     "description": "Visual LLM-guided consensus spatial domain detection with Python LLM workflows and consensus clustering in R.",
     "category": "Biomedical AI",
@@ -49,7 +49,7 @@
     "featured": false,
     "period": "March – April 2025",
     "slug": "mudac-2025",
-    "status": "7th in Innovation & Creativity among approximately 200 teams"
+    "status": "7th in Innovation & Creativity among approximately 200 undergraduate teams"
   },
   {
     "title": "Public Health Equity Data Challenge",

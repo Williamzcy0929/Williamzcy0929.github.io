@@ -66,7 +66,7 @@
   ],
   "projects": [
     {
-      "name": "TRACE: LLM-guided Trajectory Inference",
+      "name": "Trajectory Inference via AI-guided Cross-view Evidence (TRACE)",
       "description": "I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/LangGraph package for scRNA-seq, scATAC-seq, and spatial transcriptomics analysis.",
       "startDate": "2026-01",
       "highlights": [
@@ -92,7 +92,7 @@
       "status": "Ongoing methodological research"
     },
     {
-      "name": "L-STAR: LLM-guided Spatial Domain Detection",
+      "name": "Visual LLM-Guided Spatial Domain Detection (L-STAR)",
       "description": "I developed L-STAR, combining Python LLM workflows for spatial-domain method selection with consensus clustering in R and spatial expression analysis using Seurat and SpatialExperiment.",
       "startDate": "2025-09",
       "highlights": [
@@ -128,10 +128,10 @@
         "Engineered features from sparse, high-dimensional numerical and text data for mentoring-match prediction, including embeddings, sentiment scores, and pairwise similarities.",
         "Modeled match duration and closure using Cox proportional hazards regression and a causal Bayesian network.",
         "Designed a mixture-of-experts model with regression, MLP, and Transformer experts for different feature types and a learned gating network. Compared it with random forest and XGBoost baselines.",
-        "Placed 7th in Innovation & Creativity among approximately 200 teams at MUDAC 2025."
+        "Placed 7th in Innovation & Creativity among approximately 200 undergraduate teams at MUDAC 2025."
       ],
       "endDate": "2025-04",
-      "status": "7th in Innovation & Creativity among approximately 200 teams"
+      "status": "7th in Innovation & Creativity among approximately 200 undergraduate teams"
     },
     {
       "name": "UMN & Hennepin County Public Health Equity Data Challenge",
@@ -212,14 +212,6 @@
       "author_names": ["Changyue Zhao", "Zhicheng Ji"],
       "preview": "/assets/img/publication_preview/l-star-workflow.png",
       "preview_alt": "L-STAR workflow: LLM visual comparison, method selection, and consensus clustering."
-    },
-    {
-      "slug": "trace",
-      "title": "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence",
-      "authors": "Zhao, C., and Ji, Z.",
-      "status": "Manuscript in preparation",
-      "citation": "Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence. Manuscript in preparation.",
-      "author_names": ["Changyue Zhao", "Zhicheng Ji"]
     }
   ],
   "interests": [

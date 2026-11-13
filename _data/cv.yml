@@ -58,7 +58,7 @@ cv:
         - Received the SDUFE First-Prize Scholarship in 2022 and 2023.
   research:
     - slug: trace
-      title: "TRACE: LLM-guided Trajectory Inference"
+      title: Trajectory Inference via AI-guided Cross-view Evidence (TRACE)
       description: LLM-guided trajectory inference for scRNA-seq, scATAC-seq, and spatial
         transcriptomics with Python, LangGraph, R/Seurat, and Signac.
       category: Biomedical AI
@@ -123,7 +123,7 @@ cv:
         - Develop learning objectives and clinical concept readouts for incomplete longitudinal
           records.
     - slug: l-star
-      title: "L-STAR: LLM-guided Spatial Domain Detection"
+      title: Visual LLM-Guided Spatial Domain Detection (L-STAR)
       description: Visual LLM-guided consensus spatial domain detection with Python
         LLM workflows and consensus clustering in R.
       category: Biomedical AI
@@ -191,7 +191,7 @@ cv:
       period: March – April 2025
       start: 2025-03
       end: 2025-04
-      status: 7th in Innovation & Creativity among approximately 200 teams
+      status: 7th in Innovation & Creativity among approximately 200 undergraduate teams
       supervisor: Barbara Kuzmak and Robert Oliver VandenBurg, University of Minnesota
       institution: School of Statistics, University of Minnesota, Twin Cities
       summary: I engineered mentoring-match features and modeled match duration and
@@ -206,7 +206,7 @@ cv:
         - Designed a mixture-of-experts model with regression, MLP, and Transformer experts
           for different feature types and a learned gating network. Compared it with random
           forest and XGBoost baselines.
-        - Placed 7th in Innovation & Creativity among approximately 200 teams at MUDAC
+        - Placed 7th in Innovation & Creativity among approximately 200 undergraduate teams at MUDAC
           2025.
     - slug: hennepin-health-equity
       title: UMN & Hennepin County Public Health Equity Data Challenge
@@ -303,12 +303,3 @@ cv:
       preview: "/assets/img/publication_preview/l-star-workflow.png"
       preview_alt: "L-STAR workflow: LLM visual comparison, method selection, and consensus
         clustering."
-    - slug: trace
-      title: "TRACE: Trajectory Reasoning via AI-guided Cross-view Evidence"
-      authors: Zhao, C., and Ji, Z.
-      status: Manuscript in preparation
-      citation: "Zhao, C., and Ji, Z. TRACE: Trajectory Reasoning via AI-guided Cross-view
-        Evidence. Manuscript in preparation."
-      author_names:
-        - Changyue Zhao
-        - Zhicheng Ji

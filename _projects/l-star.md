@@ -1,5 +1,5 @@
 ---
-title: "L-STAR"
+title: "Visual LLM-Guided Spatial Domain Detection (L-STAR)"
 description: "Visual LLM-guided consensus spatial domain detection with Python LLM workflows and consensus clustering in R."
 category: "Biomedical AI"
 importance: 3
