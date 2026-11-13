@@ -23,7 +23,7 @@ I built OpenReview data pipelines, fine-tuned acceptance-prediction and response
 - Fine-tuned GPT-4o mini as a grader for author responses, constructing proxy scoring targets from acceptance levels with bounded Gaussian noise.
 - Trained a reply-generation model and evaluated its responses against author replies from accepted and rejected submissions using the fine-tuned grader.
 
-**Supervision:** Prof. Jie Ding, University of Minnesota.
+**Advisor:** Prof. Jie Ding, University of Minnesota.
 
 [Software](https://github.com/Williamzcy0929/PaperEval)
 

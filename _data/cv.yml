@@ -191,6 +191,7 @@ cv:
       end: 2025-04
       status: 7th in Innovation & Creativity among approximately 200 undergraduate teams
       supervisor: Barbara Kuzmak and Robert Oliver VandenBurg, University of Minnesota
+      advisor_label: Advisors
       institution: School of Statistics, University of Minnesota, Twin Cities
       summary: I engineered mentoring-match features and modeled match duration and
         closure with survival analysis, a causal Bayesian network, and a mixture-of-experts
@@ -215,6 +216,7 @@ cv:
       end: 2024-11
       status: Top 25% of the undergraduate division
       supervisor: Marta Shore and Prof. Julian Wolfson, University of Minnesota
+      advisor_label: Advisors
       institution: School of Public Health, University of Minnesota, Twin Cities
       summary: I investigated inequities in mental-health resource access and developed
         a prediction interface using Hennepin County questionnaire data.
@@ -259,6 +261,7 @@ cv:
           and manage materials in Canvas. Standardize notation and convert formulas into
           editable PowerPoint equations.
       supervisor: Dr. Lin (Lynn) Lin, Duke University
+      instructor_label: Instructor
     - title: "Undergraduate Teaching Assistant: STAT 3011"
       institution: School of Statistics, University of Minnesota, Twin Cities
       period: September 2024 – May 2025
@@ -272,6 +275,7 @@ cv:
           English Test for Teaching Assistants (equivalent to TOEFL iBT Speaking 27–30/30
           or IELTS Speaking 8.5–9.0/9)."
       supervisor: Yuyoung Park, Aritra Banerjee, Kazeem Adepoju, University of Minnesota
+      instructor_label: Instructors
       url: https://github.com/Williamzcy0929/STAT-3011-25Spring
   professional: []
   skills:

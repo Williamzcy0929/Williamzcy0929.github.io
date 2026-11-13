@@ -23,7 +23,7 @@ I develop Med2State, a Python/PyTorch deep learning model for structured patient
 - Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention and low-rank fusion to integrate available evidence.
 - Explore temporal models for irregular visits and develop learning objectives and clinical concept readouts for longitudinal patient-state representations.
 
-**Supervision:** Prof. Anru Zhang, Duke University.
+**Advisor:** Prof. Anru Zhang, Duke University.
 
 [← All research]({{ "/projects/" | relative_url }})
 

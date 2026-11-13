@@ -35,7 +35,7 @@ nav_order: 3
   <p class="research-meta">{{ entry.period }}{% if entry.institution %} · {{ entry.institution }}{% endif %}</p>
   {% if entry.status %}<p class="research-status">{{ entry.status }}</p>{% endif %}
   <ul>{% for item in entry.highlights %}<li>{{ item }}</li>{% endfor %}</ul>
-  {% if entry.supervisor %}<p><strong>Supervision:</strong> {{ entry.supervisor }}</p>{% endif %}
+  {% if entry.supervisor %}<p><strong>{{ entry.advisor_label | default: 'Advisor' }}:</strong> {{ entry.supervisor }}</p>{% endif %}
   {% if entry.url %}<p><a href="{{ entry.url }}">GitHub</a>{% if entry.huggingface %} · <a href="{{ entry.huggingface }}">Hugging Face</a>{% endif %}</p>{% endif %}
 </section>
 {% endfor %}
@@ -44,7 +44,7 @@ nav_order: 3
 <section class="cv-entry">
   <h3>{{ entry.title }}</h3><p class="research-meta">{{ entry.period }} · {{ entry.institution }}</p>
   <ul>{% for item in entry.highlights %}<li>{{ item }}</li>{% endfor %}</ul>
-  {% if entry.supervisor %}<p><strong>Supervision:</strong> {{ entry.supervisor }}</p>{% endif %}
+  {% if entry.supervisor %}<p><strong>{{ entry.instructor_label | default: 'Instructor' }}:</strong> {{ entry.supervisor }}</p>{% endif %}
   {% if entry.url %}<p><a href="{{ entry.url }}">Teaching materials</a></p>{% endif %}
 </section>
 {% endfor %}

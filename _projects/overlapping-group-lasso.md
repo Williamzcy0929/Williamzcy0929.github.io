@@ -20,7 +20,7 @@ I compared overlapping group LASSO implementations through a simulation study an
 - Designed a simulation study of 1,000 large sparse-matrix datasets with overlapping groups and used t-tests to compare implementation runtimes.
 - Implemented the optimized overlapping-group LASSO algorithm in C for integration with R.
 
-**Supervision:** Prof. Tianxi Li, University of Minnesota.
+**Advisor:** Prof. Tianxi Li, University of Minnesota.
 
 [← All research]({{ "/projects/" | relative_url }})
 

@@ -26,7 +26,7 @@ I develop TRACE, an LLM-guided trajectory inference agent and end-to-end Python/
 - Design `pPOS` to jointly evaluate lineage membership and within-lineage ordering, using blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.
 - Benchmark TRACE against Monocle 3, Slingshot, and TSCAN. Investigate discrepancies in `dyneval`-based `F1branches` evaluation and reimplement the published definition over the full cell set, with diagnostics for cell coverage and branch recovery.
 
-**Supervision:** Prof. Zhicheng Ji, Duke University.
+**Advisor:** Prof. Zhicheng Ji, Duke University.
 
 [← All research]({{ "/projects/" | relative_url }})
 

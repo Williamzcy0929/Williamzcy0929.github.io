@@ -28,7 +28,7 @@ I developed L-STAR and its Python package `lstar` for visual LLM-guided method s
 - Processed study datasets with Seurat and SpatialExperiment and developed marker-guided domain annotation, distinguishing tissue regions from cell types by sampling level and retaining `Unknown` for insufficient evidence. Evaluated annotation agreement using BioLORD-2023 embeddings and within-dataset permutation tests.
 - Assessed sensitivity to ensemble size, LLM choice, color palettes, and presentation order, and quantified redundancy among selected methods.
 
-**Supervision:** Prof. Zhicheng Ji, Duke University.
+**Advisor:** Prof. Zhicheng Ji, Duke University.
 
 [Software](https://github.com/Williamzcy0929/L-STAR)
 

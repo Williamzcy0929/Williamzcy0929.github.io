@@ -24,7 +24,7 @@ I engineered mentoring-match features and modeled match duration and closure wit
 - Designed a mixture-of-experts model with regression, MLP, and Transformer experts for different feature types and a learned gating network. Compared it with random forest and XGBoost baselines.
 - Placed 7th in Innovation & Creativity among approximately 200 undergraduate teams at MUDAC 2025.
 
-**Supervision:** Barbara Kuzmak and Robert Oliver VandenBurg, University of Minnesota.
+**Advisors:** Barbara Kuzmak and Robert Oliver VandenBurg, University of Minnesota.
 
 [← All research]({{ "/projects/" | relative_url }})
 

@@ -23,7 +23,7 @@ I investigated inequities in mental-health resource access and developed a predi
 - Developed a `tkinter` interface for mental-health prediction using AdaBoost in scikit-learn.
 - Co-authored the analysis report and poster and placed in the top 25% of the undergraduate division.
 
-**Supervision:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.
+**Advisors:** Marta Shore and Prof. Julian Wolfson, University of Minnesota.
 
 [← All research]({{ "/projects/" | relative_url }})
 
