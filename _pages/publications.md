@@ -10,6 +10,7 @@ nav_order: 2
 
 <div class="publication-catalog">
 {% for entry in site.data.cv.cv.publications %}
+  {% if entry.show_on_website == false %}{% continue %}{% endif %}
   {% assign project = site.data.projects | where: 'slug', entry.slug | first %}
   <article class="publication-item">
     <div class="publication-meta">

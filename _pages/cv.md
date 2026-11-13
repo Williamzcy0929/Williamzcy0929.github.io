@@ -24,6 +24,7 @@ nav_order: 3
 <h2 id="publications">Publications</h2>
 <ul class="publication-list">
 {% for entry in cv.publications %}
+  {% if entry.show_on_website == false %}{% continue %}{% endif %}
   <li>{{ entry.authors }}{% if entry.year %} ({{ entry.year }}).{% endif %} {{ entry.title }}. {% if entry.publisher %}<em>{{ entry.publisher }}</em>.{% endif %}{% if entry.url %} <a href="{{ entry.url }}">doi:{{ entry.doi }}</a>.{% endif %}{% if entry.status %} <em>{{ entry.status }}</em>.{% endif %}</li>
 {% endfor %}
 </ul>

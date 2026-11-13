@@ -309,6 +309,7 @@ cv:
         clustering."
     - slug: trace
       title: Visual LLM-guided trajectory inference with TRACE
+      show_on_website: false
       authors: Zhao, C., and Ji, Z.
       status: Manuscript in preparation
       citation: Zhao, C., and Ji, Z. Visual LLM-guided trajectory inference with TRACE.
@@ -318,6 +319,7 @@ cv:
         - Zhicheng Ji
     - slug: med2state
       title: "Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records"
+      show_on_website: false
       authors: Zhao, C., and Zhang, A. R.
       status: Manuscript in preparation
       citation: "Zhao, C., and Zhang, A. R. Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records. Manuscript in preparation."
