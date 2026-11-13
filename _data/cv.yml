@@ -12,8 +12,8 @@ cv:
     - network: Google Scholar
       url: https://scholar.google.com/citations?user=qmnDUYcAAAAJ&hl=en
   summary: Master of Biostatistics student at Duke University interested in methods and
-    systems for foundation models (including LLMs) and AI agents. Applied interests
-    include AI-assisted reasoning and workflow automation in biomedical informatics,
+    systems for foundation models (particularly LLMs) and AI agents. Applied interests
+    include AI-driven reasoning and workflow automation in biomedical informatics,
     deep learning for biomedical data analysis, and multimodal integration.
   education:
     - institution: Duke University
@@ -280,8 +280,8 @@ cv:
     Tools: Git, SQLite, Selenium, LangGraph, LaTeX, Markdown, SPSS
     Hobbies: Photography, Snowboarding, Car Racing, Cycling, Fitness Exercise
   research_interests:
-    - Methods and systems for foundation models (including LLMs) and AI agents
-    - AI-assisted reasoning and workflow automation in biomedical informatics
+    - Methods and systems for foundation models (particularly LLMs) and AI agents
+    - AI-driven reasoning and workflow automation in biomedical informatics
     - Deep learning methods for biomedical data analysis and multimodal integration
   publications:
     - slug: l-star
