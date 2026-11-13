@@ -77,7 +77,8 @@
         "Design pPOS to jointly evaluate lineage membership and within-lineage ordering, using blockwise pair counting and inclusion-exclusion to avoid double-counting cell pairs shared across branches.",
         "Benchmark TRACE against Monocle 3, Slingshot, and TSCAN. Investigate discrepancies in dyneval-based F1branches evaluation and reimplement the published definition over the full cell set, with diagnostics for cell coverage and branch recovery."
       ],
-      "status": "Manuscript in preparation"
+      "status": "Manuscript in preparation",
+      "publication_title": "Visual LLM-guided trajectory inference with TRACE"
     },
     {
       "name": "Med2State",
@@ -198,6 +199,14 @@
     }
   ],
   "publications": [
+    {
+      "slug": "trace",
+      "title": "Visual LLM-guided trajectory inference with TRACE",
+      "authors": "Zhao, C., and Ji, Z.",
+      "status": "Manuscript in preparation",
+      "citation": "Zhao, C., and Ji, Z. Visual LLM-guided trajectory inference with TRACE. Manuscript in preparation.",
+      "author_names": ["Changyue Zhao", "Zhicheng Ji"]
+    },
     {
       "slug": "l-star",
       "title": "Visual LLM-guided consensus spatial domain detection with L-STAR",
