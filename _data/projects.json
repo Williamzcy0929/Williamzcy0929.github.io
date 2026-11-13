@@ -18,7 +18,8 @@
     "featured": true,
     "period": "November 2025 – present",
     "status": "Ongoing methodological research",
-    "slug": "med2state"
+    "slug": "med2state",
+    "publication_title": "Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records"
   },
   {
     "title": "L-STAR: Visual LLM-Guided Spatial Domain Detection",

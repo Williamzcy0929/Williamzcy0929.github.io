@@ -89,7 +89,8 @@
         "Build modular encoders for demographics, measurements, structured EHR events, text, and images. Explore semantic cross-attention and low-rank fusion to integrate available evidence.",
         "Explore temporal models for irregular visits and develop learning objectives and clinical concept readouts for longitudinal patient-state representations."
       ],
-      "status": "Ongoing methodological research"
+      "status": "Ongoing methodological research",
+      "publication_title": "Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records"
     },
     {
       "name": "L-STAR: Visual LLM-Guided Spatial Domain Detection",
@@ -200,14 +201,6 @@
   ],
   "publications": [
     {
-      "slug": "trace",
-      "title": "Visual LLM-guided trajectory inference with TRACE",
-      "authors": "Zhao, C., and Ji, Z.",
-      "status": "Manuscript in preparation",
-      "citation": "Zhao, C., and Ji, Z. Visual LLM-guided trajectory inference with TRACE. Manuscript in preparation.",
-      "author_names": ["Changyue Zhao", "Zhicheng Ji"]
-    },
-    {
       "slug": "l-star",
       "title": "Visual LLM-guided consensus spatial domain detection with L-STAR",
       "authors": "Zhao, C., and Ji, Z.",
@@ -220,6 +213,22 @@
       "author_names": ["Changyue Zhao", "Zhicheng Ji"],
       "preview": "/assets/img/publication_preview/l-star-workflow.png",
       "preview_alt": "L-STAR workflow: LLM visual comparison, method selection, and consensus clustering."
+    },
+    {
+      "slug": "trace",
+      "title": "Visual LLM-guided trajectory inference with TRACE",
+      "authors": "Zhao, C., and Ji, Z.",
+      "status": "Manuscript in preparation",
+      "citation": "Zhao, C., and Ji, Z. Visual LLM-guided trajectory inference with TRACE. Manuscript in preparation.",
+      "author_names": ["Changyue Zhao", "Zhicheng Ji"]
+    },
+    {
+      "slug": "med2state",
+      "title": "Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records",
+      "authors": "Zhao, C., and Zhang, A. R.",
+      "status": "Manuscript in preparation",
+      "citation": "Zhao, C., and Zhang, A. R. Med2State: Learning Semantically Structured Patient State Representations from Multimodal Electronic Health Records. Manuscript in preparation.",
+      "author_names": ["Changyue Zhao", "Anru R. Zhang"]
     }
   ],
   "awards": [
