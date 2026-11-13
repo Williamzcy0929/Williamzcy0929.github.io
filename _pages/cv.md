@@ -20,7 +20,7 @@ nav_order: 3
 </section>
 {% endfor %}
 <h2 id="interests">Research Interests</h2>
-<ul>{% for interest in cv.research_interests %}<li>{{ interest }}</li>{% endfor %}</ul>
+{% for interest in cv.research_interests %}<p>{{ interest }}</p>{% endfor %}
 <h2 id="publications">Publications</h2>
 <ul class="publication-list">
 {% for entry in cv.publications %}

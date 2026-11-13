@@ -11,9 +11,10 @@ cv:
       username: Williamzcy0929
     - network: Google Scholar
       url: https://scholar.google.com/citations?user=qmnDUYcAAAAJ&hl=en
-  summary: Master of Biostatistics student at Duke University developing foundation-model
-    and LLM-agent approaches to biomedical analysis, and deep learning methods for
-    biomedical data analysis and multimodal integration.
+  summary: Master of Biostatistics student at Duke University interested in foundation
+    models and agentic AI systems, particularly large language models, and their
+    applications in biomedical informatics. Additional interests include deep learning
+    methods for biomedical data analysis and multimodal integration.
   education:
     - institution: Duke University
       location: Durham, NC
@@ -279,7 +280,8 @@ cv:
     Tools: Git, SQLite, Selenium, LangGraph, LaTeX, Markdown, SPSS
     Hobbies: Photography, Snowboarding, Car Racing, Cycling, Fitness Exercise
   research_interests:
-    - Applications of foundation models and LLM-based agents for biomedical analysis
+    - Foundation models and agentic AI systems, with a focus on large language models
+    - Applications of foundation models and LLM-based agents in biomedical informatics
     - Deep learning methods for biomedical data analysis and multimodal integration
   publications:
     - slug: l-star

@@ -12,7 +12,7 @@ permalink: "/"
     <h1>Changyue <span>(William)</span> Zhao</h1>
     <p class="intro-text">I am a Master of Biostatistics student in the Health AI Track at Duke University. I currently conduct research in the <a href="https://zji90.github.io/">Ji Lab</a> at Duke University School of Medicine.</p>
     <p class="intro-text">Previously, I graduated with High Distinction from the University of Minnesota, Twin Cities, with a B.S. in Statistical Science and a minor in Computer Science.</p>
-    <p class="intro-text">My research focuses on foundation models and LLM-based agents for biomedical analysis, and deep learning methods for multimodal biomedical data.</p>
+    <p class="intro-text">I am interested in foundation models and agentic AI systems, with a focus on LLMs and applications in biomedical informatics. My interests also include deep learning for biomedical data analysis and multimodal integration.</p>
     <div class="intro-links">
       <a href="{{ '/assets/pdf/CV.pdf' | relative_url }}">CV (PDF)</a>
       <a href="mailto:changyue.zhao@duke.edu,williamzcy929@gmail.com">Email</a>
