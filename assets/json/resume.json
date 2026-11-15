@@ -209,6 +209,7 @@
       "releaseDate": "2026-11-03",
       "doi": "10.1038/s41467-026-78923-w",
       "url": "https://doi.org/10.1038/s41467-026-78923-w",
+      "github": "https://github.com/Williamzcy0929/L-STAR",
       "citation": "Zhao, C., and Ji, Z. (2026). Visual LLM-guided consensus spatial domain detection with L-STAR. Nature Communications. doi:10.1038/s41467-026-78923-w.",
       "author_names": ["Changyue Zhao", "Zhicheng Ji"],
       "preview": "/assets/img/publication_preview/l-star-workflow.png",

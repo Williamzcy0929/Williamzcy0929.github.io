@@ -21,7 +21,7 @@ nav_order: 2
       <h2>{{ entry.title }}</h2>
       <p class="publication-authors">{% for author in entry.author_names %}{% if forloop.first != true %}{% if forloop.last %} and {% else %}, {% endif %}{% endif %}{% if author == "Changyue Zhao" %}<u>{{ author }}</u>{% else %}{{ author }}{% endif %}{% endfor %}</p>
       <p class="publication-venue"><em>{% if entry.publisher %}{{ entry.publisher }}{% else %}{{ entry.status }}{% endif %}</em>{% if entry.year %}, {{ entry.year }}{% endif %}</p>
-      {% if entry.url %}<div class="publication-links"><a href="{% if project.deliverable_url %}{{ project.deliverable_url }}{% else %}{{ entry.url }}{% endif %}" aria-label="Read {{ entry.title }}">HTML</a></div>{% endif %}
+      {% if entry.url or entry.github %}<div class="publication-links">{% if entry.url %}<a href="{% if project.deliverable_url %}{{ project.deliverable_url }}{% else %}{{ entry.url }}{% endif %}" aria-label="Read {{ entry.title }}">HTML</a>{% endif %}{% if entry.github %}<a href="{{ entry.github }}" aria-label="View {{ entry.title }} on GitHub">GitHub</a>{% endif %}</div>{% endif %}
     </div>
     {% if entry.year %}<div class="publication-year" aria-hidden="true">{{ entry.year }}</div>{% endif %}
   </article>
