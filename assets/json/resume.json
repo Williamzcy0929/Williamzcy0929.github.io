@@ -42,26 +42,14 @@
       "area": "Statistical Science",
       "studyType": "Bachelor of Science in Statistical Science, Minor in Computer Science",
       "score": "GPA: 4.0/4.0",
-      "startDate": "2023-09",
+      "startDate": "2021",
       "highlights": [
         "Selected Coursework: Mathematical Foundation (Introduction to Mathematical Analysis), Regression and Correlation Data, Statistical Computing in R, Theory of Statistics, Statistical Machine Learning, Analysis of Categorical Data, Applied Multivariate Methods, Discrete Mathematics, Advanced Programming Principles, Algorithms and Data Structures, Applied Machine Learning, Data Mining (Graduate Level)",
         "Graduated with High Distinction.",
         "Received the Buehler Memorial Undergraduate Award as one of eight nominees.",
         "Named to the College of Liberal Arts Dean's List in all semesters (4/4)."
       ],
-      "endDate": "2025-05"
-    },
-    {
-      "institution": "Shandong University of Finance and Economics",
-      "area": "Finance",
-      "studyType": "Bachelor of Economics in Finance",
-      "score": "GPA: 92.86/100 (WES GPA: 3.89/4.0)",
-      "startDate": "2021-09",
-      "highlights": [
-        "Selected Coursework: Advanced Mathematics (Calculus, Introduction to Ordinary Differential Equations), Linear Algebra, Probability Theory and Statistics, Applied Statistics, Python",
-        "Received the SDUFE First-Prize Scholarship in 2022 and 2023."
-      ],
-      "endDate": "2023-06"
+      "endDate": "2025"
     }
   ],
   "projects": [

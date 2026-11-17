@@ -33,8 +33,8 @@ cv:
       location: Minneapolis, MN
       area: Statistical Science
       studyType: Bachelor of Science in Statistical Science, Minor in Computer Science
-      start_date: 2023-09
-      end_date: 2025-05
+      start_date: "2021"
+      end_date: "2025"
       score: "GPA: 4.0/4.0"
       highlights:
         - "Selected Coursework: Mathematical Foundation (Introduction to Mathematical
@@ -46,18 +46,6 @@ cv:
         - Graduated with High Distinction.
         - Received the <a href="https://cla.umn.edu/statistics/news-events/story/celebrating-our-students">Buehler Memorial Undergraduate Award</a> as one of eight nominees.
         - Named to the College of Liberal Arts Dean's List in all semesters (4/4).
-    - institution: Shandong University of Finance and Economics
-      location: Jinan, China
-      area: Finance
-      studyType: Bachelor of Economics in Finance
-      start_date: 2021-09
-      end_date: 2023-06
-      score: "GPA: 92.86/100 (WES GPA: 3.89/4.0)"
-      highlights:
-        - "Selected Coursework: Advanced Mathematics (Calculus, Introduction to Ordinary
-          Differential Equations), Linear Algebra, Probability Theory and Statistics,
-          Applied Statistics, Python"
-        - Received the SDUFE First-Prize Scholarship in 2022 and 2023.
   research:
     - slug: trace
       title: "TRACE: Trajectory Inference via AI-guided Cross-view Evidence"
